@@ -226,3 +226,11 @@ img {
   justify-content: space-between;
   flex-direction: column;
 }
+.align-start {
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+  }
+}
