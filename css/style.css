@@ -598,6 +598,10 @@ footer .bottom-footer ul li a span {
   .right-bottom-box-shadow h5 {
     font-size: 0.7em;
   }
+
+  footer .social-icon-wrapper ul li {
+    margin-right: 0.8em;
+  }
   footer address {
     font-size: 0.6em;
     width: 80%;
@@ -640,6 +644,10 @@ footer .bottom-footer ul li a span {
 
   .right-bottom-box-shadow h5 {
     font-size: 0.75em;
+  }
+
+  footer .social-icon-wrapper ul li {
+    margin-right: 1em;
   }
   footer address {
     font-size: 0.5em;
