@@ -277,7 +277,9 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  font-size: 0.7rem;
 }
+
 .text-left {
   text-align: left;
 }
@@ -330,6 +332,87 @@ button {
   }
   .col-70 {
     width: 70%;
+  }
+}
+
+/******HEADER******/
+.navbar-top {
+  display: none;
+}
+@media (min-width: 768px) {
+  .navbar-top {
+    display: block;
+    padding: 0;
+    line-height: 0;
+  }
+  .navbar-top .container {
+    padding: 0 0.2em;
+  }
+
+  .navbar-top p {
+    width: 50%;
+    margin-inline: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .navbar-top .container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    padding: 0;
+    max-width: 250px;
+  }
+
+  .navbar-top .container div a.inline-block {
+    width: auto;
+    padding: 0.4em 0.8em;
+  }
+
+  .navbar-top .container div ul.inline-block {
+    width: auto;
+  }
+  .navbar-top .container div ul.inline-block button {
+    padding: 0.6em 0.8em;
+    width: 100%;
+    color: var(--primary-color);
+    background-color: var(--next-primary-color);
+    font-weight: 500;
+  }
+
+  .navbar-top .inline-block .dropdown {
+    position: relative; /****will get back to you shortly******/
+    display: inline-block;
+  }
+  .navbar-top .inline-block .dropdown {
+    position: relative; /****will get back to you shortly******/
+    display: inline-block;
+  }
+  .navbar-top .inline-block .dropdown-content {
+    position: absolute; /****will get back to you shortly******/
+    display: none;
+    min-width: 250px;
+    padding: 1em 0.5em;
+    z-index: 99;
+    right: 0;
+    box-shadow: 1px 1px 1px 0 rgba(15, 15, 15, 0.1);
+    transition: display 0.5s ease-in-out;
+  }
+  .navbar-top .inline-block .dropdown-content li {
+    display: block;
+    width: 100%;
+    line-height: 1.4;
+  }
+  .navbar-top .inline-block .dropdown-content li a {
+    padding: 0.5em 0.8em;
+    text-align: left;
+    color: var(--primary-color);
+    font-weight: 300;
+  }
+  .navbar-top .inline-block .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
 
