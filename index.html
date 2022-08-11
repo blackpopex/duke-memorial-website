@@ -57,9 +57,9 @@
         </div>
         <!--Second Navbar-->
         <div id="second_navbar" class="navbar-bottom">
-          <div class="flex align-start">
+          <div class="flex align-start flex-row">
             <div class="column-20 bg-white container-left-ten%">
-              <a href="#" id="logo">
+              <a href="#" id="header_logo">
                 <img src="assets/logo/blue-logo-duke.jpg" alt="duke logo" />
               </a>
             </div>
@@ -77,10 +77,17 @@
                 ></a>
 
                 <ul id="menu_bar">
+                  <div class="sidebar-with-logo">
+                    <a href="index.html" class="mobile-navbar-logo">
+                      <img
+                        src="assets/logo/duke-logo-white.png"
+                        alt="duke logo"
+                      />
+                    </a>
+                  </div>
+
                   <li class="dropdown">
-                    <a href="#/" class="dropdown-btn"
-                      >About Us <i class="fa fa-fw fa-chevron-down"></i
-                    ></a>
+                    <a href="#/" class="dropdown-btn">About Us </a>
                     <div class="dropdown-content bg-next-primary-color">
                       <div class="flex align-start">
                         <div class="image-container">
@@ -106,10 +113,7 @@
                     </div>
                   </li>
                   <li class="dropdown">
-                    <a href="#/" class="dropdown-btn"
-                      >Patient & Visitors
-                      <i class="fa fa-fw fa-chevron-down"></i
-                    ></a>
+                    <a href="#/" class="dropdown-btn">Patient & Visitors </a>
                     <div class="dropdown-content bg-next-primary-color">
                       <div class="flex align-start">
                         <div class="image-container column-33">
@@ -127,13 +131,13 @@
                           <div class="patient-care col-33">
                             <h5 class="text-primary">Patient Care</h5>
                             <div class="flex align-start">
-                              <ul class="column-50">
+                              <ul class="column-50 remove-pd-bottom">
                                 <li><a href="#/">Book Appointment</a></li>
                                 <li><a href="#/">Your Hospital Visit</a></li>
                                 <li><a href="#/">What to Expect</a></li>
                                 <li><a href="#/">Pay a Bill</a></li>
                               </ul>
-                              <ul class="col-50">
+                              <ul class="col-50 remove-mg-top">
                                 <li><a href="#/">Patient Rights</a></li>
                                 <li><a href="#/">Patient Stories</a></li>
                                 <li>
@@ -153,9 +157,11 @@
                       </div>
                     </div>
                   </li>
-                  <li><a href="#/">Refer a Patient</a></li>
-                  <li><a href="#/">Map & Direction</a></li>
-                  <li><a href="#/">Contact us</a></li>
+                  <div id="bg-mobile-image" style="background-color: red">
+                    <li class="listed"><a href="#/">Refer a Patient</a></li>
+                    <li class="listed"><a href="#/">Map & Direction</a></li>
+                    <li class="listed"><a href="#/">Contact us</a></li>
+                  </div>
                 </ul>
               </nav>
             </div>
