@@ -58,12 +58,18 @@
         <!--Second Navbar-->
         <div id="second_navbar" class="navbar-bottom">
           <div class="flex align-start flex-row">
-            <div class="column-20 bg-white container-left-ten%">
+            <div
+              class="column-20 bg-white container-left-ten%"
+              id="whiteBackground"
+            >
               <a href="#" id="header_logo">
                 <img src="assets/logo/blue-logo-duke.jpg" alt="duke logo" />
               </a>
             </div>
-            <div class="column-80 bg-primary-color container-right-ten%">
+            <div
+              class="column-80 bg-primary-color container-right-ten%"
+              id="greenBackground"
+            >
               <nav>
                 <div class="hamburger-menu" id="navToggle">
                   <div class="span bar1"></div>
@@ -118,7 +124,10 @@
                   </li>
                   <li class="dropdown">
                     <a href="#/" class="dropdown-btn">Patient & Visitors </a>
-                    <div class="dropdown-content bg-next-primary-color">
+                    <div
+                      class="dropdown-content bg-next-primary-color"
+                      style="display: none"
+                    >
                       <div class="flex align-start">
                         <div class="image-container column-33">
                           <h3 class="text-primary">Patient & Visitors</h3>
