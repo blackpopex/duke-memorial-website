@@ -211,7 +211,7 @@ ul {
   list-style: none;
 }
 section {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 #sectionHeader {
   padding: 0;
@@ -267,6 +267,10 @@ img {
   background-color: var(--next-primary-color);
 }
 
+.bg-lighter-grey {
+  background-color: var(--lighter-tea-color);
+}
+
 .text-primary {
   color: var(--primary-color);
 }
@@ -287,6 +291,65 @@ button {
 .text-left {
   text-align: left;
 }
+.btn {
+  padding: 0.5em 2em;
+  cursor: pointer;
+  text-align: center;
+  width: auto;
+}
+
+.bg-green {
+  background-color: var(--primary-color);
+}
+.btn .fa-angle-double-right {
+  color: var(--green-color);
+}
+.border-green {
+  border: 1px solid var(--green-color);
+  color: var(--white-color);
+}
+.border-green .fa-angle-double-right {
+  color: var(--white-color);
+}
+
+.small-width-heading {
+  width: 100%;
+  max-width: 200px;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+.flex-wrap,
+.flex-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.fixed-width {
+  width: 100%;
+  width: 80px;
+  line-height: 1.2;
+}
+
+.white-bg {
+  box-shadow: var(--default-box-shadow);
+  background-color: var(--white-color);
+}
+.primary-bg {
+  box-shadow: var(--default-box-shadow);
+  background-color: var(--primary-color);
+}
+
 .col-20,
 .col-25,
 .col-30,
@@ -298,6 +361,20 @@ button {
 .col-60,
 .col-70 {
   width: 100%;
+}
+
+.width-30 {
+  width: 30%;
+  max-width: 200px;
+}
+.width-25 {
+  width: 25%;
+  max-width: 150px;
+}
+.width-30,
+.width-25 {
+  margin-inline: auto;
+  text-align: center;
 }
 
 .column-20 {
@@ -847,13 +924,10 @@ button {
 /***hero image***/
 
 #hero_image {
-  margin-bottom: 15em;
   margin-top: 0.6;
 }
-
 @media (min-width: 768px) {
   #hero_image {
-    margin-bottom: 15em;
     margin-top: 0;
     padding: 0;
   }
@@ -1020,6 +1094,7 @@ button {
   line-height: 1.2;
   font-weight: 400;
   font-size: 0.6rem;
+  color: #d8d8d8ab;
 }
 
 .contact_us .form-container {
@@ -1201,6 +1276,7 @@ button {
   }
   .contact_us .form-container .max-width {
     font-size: 0.75rem;
+    text-align: left;
   }
 
   .contact_us .form-container form label {
@@ -1611,4 +1687,482 @@ footer .bottom-footer ul li a span {
     font-size: 0.5em;
     font-weight: 600;
   }
+}
+
+/***********INDEX PAGE****************/
+
+/*****INTRO*****/
+#intro .col-50:first-child {
+  max-width: 600px;
+  margin-bottom: 1.5em;
+  margin-inline: auto;
+}
+
+.picture-content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+.picture-content-wrapper img {
+  width: 100%;
+}
+.picture-content-wrapper .button-cotainer {
+  width: 60%;
+  max-width: 400px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.picture-content-wrapper .flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.picture-content-wrapper .flex-row div {
+  width: 100%;
+  display: block;
+}
+.picture-content-wrapper .flex-row a {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.picture-content-wrapper .flex-row .bg-primary-color {
+  background-color: rgb(33, 78, 113);
+  background-color: rgba(33, 78, 113, 0.8);
+}
+.picture-content-wrapper .flex-row .bg-lighter-grey {
+  background-color: rgb(239, 239, 239);
+  background-color: rgba(239, 239, 239, 0.8);
+}
+.picture-content-wrapper .flex-row h5 {
+  font-size: 0.9em;
+  width: 100%;
+  max-width: 60px;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1em 0.5em;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@media (min-width: 600px) {
+  .picture-content-wrapper .flex-row a {
+    padding: 0.5em 0.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  #intro .align-start {
+    flex-direction: column;
+  }
+  #intro .col-50:first-child {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+  #intro .col-50:last-child {
+    width: 100%;
+  }
+
+  .picture-content-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin-inline: 0 auto;
+  }
+
+  .picture-content-wrapper .button-cotainer {
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+  }
+  .picture-content-wrapper .flex-row a {
+    padding: 0.5em 1em;
+  }
+  .picture-content-wrapper .flex-row h5 {
+    font-size: 1.25em;
+    width: 100%;
+    max-width: 100px;
+    margin-inline: auto;
+    text-align: center;
+    padding: 1em 0.5em;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+}
+@media (min-width: 992px) {
+  #intro .align-start {
+    flex-direction: row;
+    align-items: center;
+  }
+  #intro .col-50:first-child {
+    width: 50%;
+    max-width: 550px;
+    margin-inline: 0 auto;
+    margin-bottom: 0;
+  }
+  #intro .col-50:last-child {
+    width: 50%;
+  }
+  .picture-content-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin-inline: auto 0;
+  }
+  .picture-content-wrapper .button-cotainer {
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+  }
+  .picture-content-wrapper .flex-row a {
+    padding: 0.25em 0.5em;
+  }
+  .picture-content-wrapper .flex-row h5 {
+    font-size: 1.25em;
+    padding: 0.5em;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 1600px) {
+  #intro .col-50:first-child {
+    max-width: 600px;
+  }
+  .picture-content-wrapper {
+    max-width: 550px;
+  }
+  .picture-content-wrapper .button-cotainer {
+    max-width: 550px;
+  }
+  .picture-content-wrapper .flex-row a {
+    padding: 0.5em 0.5em;
+  }
+  .picture-content-wrapper .flex-row h5 {
+    font-size: 1.25em;
+    padding: 1em 0.5em;
+    line-height: 1.2;
+  }
+}
+
+/*******OUR PRIORITY******/
+/***Adverts***/
+.bg-hospital-image {
+  background-image: url("../assets/other-photos/Untitled-12.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 600px;
+  position: relative;
+}
+#adverts img {
+  width: 100%;
+  max-width: 400px;
+  margin-inline: auto;
+  margin-bottom: 1.5em;
+}
+#adverts h3 {
+  text-align: center;
+}
+
+#adverts .max-width {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin-inline: auto;
+  margin-top: 0;
+  font-weight: 500;
+}
+#adverts .max-width:last-child {
+  margin-top: 1em;
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+#adverts .max-width .number-box {
+  width: 100%;
+  max-width: 120px;
+  margin-inline: auto;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.number-box h2 {
+  margin-bottom: 0;
+  text-align: left;
+}
+.number-box p {
+  font-size: 1;
+}
+
+@media (min-width: 600px) {
+  h5.max-width {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  #adverts .max-width:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  #adverts img {
+    margin-inline: 0 auto;
+    margin-bottom: 0;
+  }
+
+  .max-width {
+    margin-inline: 0 auto;
+  }
+
+  #adverts h3,
+  h5.max-width {
+    text-align: left;
+  }
+  #adverts h3 {
+    line-height: 0.4;
+  }
+
+  #adverts .max-width:last-child {
+    margin-top: 1em;
+    font-weight: 500;
+    margin-bottom: 0;
+    max-width: 400px;
+    margin-inline: 0 auto;
+  }
+  #adverts .max-width .number-box {
+    max-width: 120px;
+    margin-inline: 0 auto;
+  }
+  #adverts .max-width:last-child h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 992px) {
+  h5.max-width {
+    font-weight: 800;
+  }
+  #adverts .max-width:last-child,
+  #adverts h3 {
+    max-width: 450px;
+    margin-inline: auto 0;
+  }
+}
+@media (min-width: 1200px) {
+  #adverts img {
+    margin-inline: 0 auto;
+    margin-bottom: 0;
+  }
+  #adverts .max-width:last-child,
+  #adverts h3 {
+    max-width: 500px;
+    margin-inline: 0 auto;
+  }
+
+  #adverts .max-width:last-child h2 {
+    font-size: 1.4em;
+  }
+  #adverts .wrapper {
+    margin-left: 1.5em;
+  }
+}
+
+@media (min-width: 1400px) {
+  #adverts img {
+    margin-inline: auto 0;
+    margin-bottom: 0;
+  }
+  #adverts .max-width:last-child,
+  #adverts h3 {
+    margin-inline: 0 auto;
+    max-width: 600px;
+  }
+  #adverts .max-width:last-child h2 {
+    font-size: 1.6em;
+  }
+  #adverts .max-width .number-box {
+    max-width: 150px;
+  }
+  #adverts .wrapper {
+    margin-left: 2em;
+  }
+}
+
+/*******CLINIC DAYS******/
+
+/*******RESOURCES******/
+#patientResources .resources-wrapper {
+  margin-top: 1.5em;
+}
+
+#patientResources .resources-wrapper .width-25,
+#patientResources .resources-wrapper .width-30 {
+  display: block;
+  padding: 0.5em;
+}
+#patientResources .resources-wrapper .width-30 {
+  width: 30%;
+  margin-bottom: 0.5em;
+}
+#patientResources .resources-wrapper .width-25 {
+  width: 25%;
+}
+#patientResources .resources-wrapper .fa {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+#patientResources .resources-wrapper a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  padding: 0.2em;
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-bottom: 1em;
+  border: 1px solid var(--primary-color);
+}
+#patientResources .resources-wrapper p {
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  #patientResources .resources-wrapper .fa {
+    color: var(--primary-color);
+    font-size: 1.8em;
+  }
+  #patientResources .resources-wrapper a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0.4em;
+    margin-bottom: 1em;
+    border: 1px solid var(--primary-color);
+  }
+  #patientResources .resources-wrapper p {
+    line-height: 1.2;
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  #patientResources .resources-wrapper {
+    margin-top: 2em;
+  }
+  #patientResources .resources-wrapper .width-30 {
+    width: 33.33%;
+  }
+  #patientResources .resources-wrapper .width-25 {
+    width: 25.5%;
+  }
+}
+@media (min-width: 1200px) {
+  #patientResources .resources-wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+  #patientResources .resources-wrapper .width-30 {
+    max-width: 400px;
+    display: block;
+  }
+  #patientResources .resources-wrapper .width-25 {
+    max-width: 200px;
+    margin-inline: auto;
+  }
+}
+@media (min-width: 1400px) {
+  #patientResources .resources-wrapper {
+    width: 100%;
+    max-width: 1200px;
+  }
+  #patientResources .resources-wrapper .width-30 {
+    max-width: 400px;
+    display: block;
+    margin-bottom: 2em;
+  }
+  #patientResources .resources-wrapper .width-25 {
+    max-width: 200px;
+    margin-inline: auto;
+  }
+  #patientResources .resources-wrapper a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0.2em;
+  }
+  #patientResources .resources-wrapper p {
+    font-weight: 500;
+  }
+}
+
+/*********Testimonies********/
+#patientTestimonies .col-60 {
+  display: none;
+}
+#patientTestimonies .col-40 {
+  padding: 3em 0.5em;
+  width: 100%;
+}
+#patientTestimonies .col-40 h3 {
+  font-size: 1.5em;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+#patientTestimonies .col-40 .text-green {
+  font-size: 0.75em;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+#patientTestimonies .col-40 .max-width {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2em;
+}
+#patientTestimonies .relative-container-right .testifier {
+  padding: 0.8em;
+  margin-bottom: 1em;
+}
+#patientTestimonies .relative-container-right .white-bg {
+  background-color: var(--white-color);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+#patientTestimonies .relative-container-right .primary-bg {
+  background-color: #265375;
+  box-shadow: 1px 1px 1px 1px rgba(21, 57, 83, 0.4);
+}
+#patientTestimonies .relative-container-right img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+#patientTestimonies .relative-container-right .flex-row .flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#patientTestimonies .relative-container-right .flex-row div {
+  width: 100%;
+}
+
+#patientTestimonies .relative-container-right .testifier p {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+}
+#patientTestimonies .relative-container-right .testifier h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 0.7em;
 }
