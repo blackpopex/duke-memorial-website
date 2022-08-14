@@ -82,7 +82,7 @@
                   id="SearchBTN"
                 ></a>
 
-                <ul id="menu_bar">
+                <ul id="menu_bar" class="menuBar">
                   <div class="sidebar-with-logo hide-lg-screen">
                     <a href="index.html" class="mobile-navbar-logo">
                       <img
@@ -124,10 +124,7 @@
                   </li>
                   <li class="dropdown">
                     <a href="#/" class="dropdown-btn">Patient & Visitors </a>
-                    <div
-                      class="dropdown-content bg-next-primary-color"
-                      style="display: none"
-                    >
+                    <div class="dropdown-content bg-next-primary-color">
                       <div class="flex align-start">
                         <div class="image-container column-33">
                           <h3 class="text-primary">Patient & Visitors</h3>
@@ -175,7 +172,7 @@
                   <li class="listed"><a href="#/">Map & Direction</a></li>
                   <li class="listed"><a href="#/">Contact us</a></li>
 
-                  <div class="get-our-app hide-lg-screen">
+                  <div class="get-our-app hide-lg-screen" id="getApp">
                     <h3 class="text-white">
                       Download Duke's Apps for Android and iOS Devices
                     </h3>
@@ -196,7 +193,81 @@
             </div>
           </div>
         </div>
+        <!--Search Container-->
+        <div id="sectionContainer" class="sectionbar bg-primary-color">
+          <div class="container">
+            <form action="action_page.php" method="post">
+              <input type="text" placeholder="I'm Looking for..." />
+            </form>
+          </div>
+        </div>
       </header>
+      <!-------------CONTACT US ------------------>
+
+      <section style="display: none">
+        <div id="contactUs" class="contact_us">
+          <span class="close-btn" id="closeSidebar">&times;</span>
+          <div class="content">
+            <h3 class="text-white">Contact Us</h3>
+            <div class="contact-details">
+              <h3 class="text-green">Get in touch with us!</h3>
+              <div class="box">
+                <i class="fa fa-fw fa-phone-o"></i>
+                <h5 class="text-white text-center">Phone</h5>
+                <div>
+                  <p>+1 716-298-1822</p>
+                  <p>+1 716-298-1822</p>
+                </div>
+              </div>
+              <div class="box">
+                <i class="fas fa-fw fa-map"></i>
+                <h5 class="text-white text-center">Address</h5>
+                <div>
+                  <p>3909 Witmer Rd, Niagara Falls, NY 14305, United States</p>
+                </div>
+              </div>
+              <div class="box">
+                <i class="fa fa-fw fa-envelope"></i>
+                <h5 class="text-white text-center">Email</h5>
+                <div>
+                  <p>admin@dukememorial.com</p>
+                  <p>contact@dukememorial.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-container">
+              <h3 class="text-white">Online enquiry form</h3>
+              <p class="text-green max-width">
+                You have any question? please fill the contact form below and we
+                will get back to you shortly
+              </p>
+              <form action="action_page.php" method="post">
+                <div>
+                  <label for="full_name">Full Name:</label>
+                  <input type="text" name="fullName" id="full_name" />
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="text" name="eMail" id="email" />
+                </div>
+                <div>
+                  <label for="Subject">Subject:</label>
+                  <input type="text" name="Subject" id="Subject" />
+                </div>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="10"
+                  rows="5"
+                ></textarea>
+                <button class="bg-green btn" type="submit">
+                  Submit <i class="fa fa-angle-double-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-------------HERO IMAGE------------------->
       <section id="hero_image">
         <div class="faded-overlay"></div>
