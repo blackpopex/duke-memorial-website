@@ -170,7 +170,9 @@
 
                   <li class="listed"><a href="#/">Refer a Patient</a></li>
                   <li class="listed"><a href="#/">Map & Direction</a></li>
-                  <li class="listed"><a href="#/">Contact us</a></li>
+                  <li class="listed">
+                    <a href="#/" id="contactUs">Contact us</a>
+                  </li>
 
                   <div class="get-our-app hide-lg-screen" id="getApp">
                     <h3 class="text-white">
@@ -204,15 +206,15 @@
       </header>
       <!-------------CONTACT US ------------------>
 
-      <section style="display: none">
-        <div id="contactUs" class="contact_us">
-          <span class="close-btn" id="closeSidebar">&times;</span>
-          <div class="content">
-            <h3 class="text-white">Contact Us</h3>
-            <div class="contact-details">
-              <h3 class="text-green">Get in touch with us!</h3>
+      <div id="contactForm" class="contact_us">
+        <span class="close-btn" id="closeContactSidebar">&times;</span>
+        <div class="content">
+          <h3 class="text-white">Contact Us</h3>
+          <div class="contact-details">
+            <h3 class="text-green small-font">Get in touch with us!</h3>
+            <div class="contact_information">
               <div class="box">
-                <i class="fa fa-fw fa-phone-o"></i>
+                <i class="fa fa-fw fa-phone"></i>
                 <h5 class="text-white text-center">Phone</h5>
                 <div>
                   <p>+1 716-298-1822</p>
@@ -230,44 +232,46 @@
                 <i class="fa fa-fw fa-envelope"></i>
                 <h5 class="text-white text-center">Email</h5>
                 <div>
-                  <p>admin@dukememorial.com</p>
-                  <p>contact@dukememorial.com</p>
+                  <p>admin@dukemem.com</p>
+                  <p>contact@dukemem.com</p>
                 </div>
               </div>
             </div>
-            <div class="form-container">
-              <h3 class="text-white">Online enquiry form</h3>
-              <p class="text-green max-width">
-                You have any question? please fill the contact form below and we
-                will get back to you shortly
-              </p>
-              <form action="action_page.php" method="post">
-                <div>
-                  <label for="full_name">Full Name:</label>
-                  <input type="text" name="fullName" id="full_name" />
-                </div>
-                <div>
-                  <label for="email">Email:</label>
-                  <input type="text" name="eMail" id="email" />
-                </div>
-                <div>
-                  <label for="Subject">Subject:</label>
-                  <input type="text" name="Subject" id="Subject" />
-                </div>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="10"
-                  rows="5"
-                ></textarea>
-                <button class="bg-green btn" type="submit">
-                  Submit <i class="fa fa-angle-double-right"></i>
-                </button>
-              </form>
-            </div>
+          </div>
+          <div class="form-container">
+            <h3 class="text-green small-font">Online enquiry form</h3>
+            <p class="text-white max-width">
+              You have any question? please fill the contact form below and we
+              will get back to you shortly
+            </p>
+            <form action="action_page.php" method="post">
+              <div>
+                <label for="full_name">Full Name:</label>
+                <input type="text" name="fullName" id="full_name" />
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="text" name="eMail" id="email" />
+              </div>
+              <div>
+                <label for="Subject">Subject:</label>
+                <input type="text" name="Subject" id="Subject" />
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your message..."
+                cols="10"
+                rows="5"
+              ></textarea>
+              <button class="bg-green btn" type="submit">
+                Submit <i class="fa fa-angle-double-right"></i>
+              </button>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
+      <!-------------CONTACT US ENDS ------------------>
       <!-------------HERO IMAGE------------------->
       <section id="hero_image">
         <div class="faded-overlay"></div>

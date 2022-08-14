@@ -36,4 +36,20 @@ closeBtn.addEventListener("click", function () {
 
 searchBTN.addEventListener("click", function () {
   sectionContainer.classList.toggle("showSearch");
+  searchBTN.classList.toggle("fa-times");
+});
+
+//toggle open and closing of contact form
+
+var contactBTN = document.querySelector("#contactUs");
+var contactForm = document.querySelector("#contactForm");
+var closeContactBtn = document.querySelector("#closeContactSidebar");
+
+contactBTN.addEventListener("click", function () {
+  contactForm.classList.add("toggle-width");
+  contactForm.style.right = "0";
+});
+closeContactBtn.addEventListener("click", function () {
+  contactForm.classList.remove("toggle-width");
+  contactForm.style.right = "-60px";
 });
