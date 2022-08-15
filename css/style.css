@@ -220,7 +220,7 @@ section {
 .container {
   margin-inline: auto;
   width: min(90%, 90rem);
-  padding: 0.2em 0.2em;
+  padding: 0 0.2em;
 }
 
 @media (min-width: 1400px) {
@@ -1089,7 +1089,7 @@ button {
   line-height: 1.2;
   font-weight: 400;
   font-size: 0.6rem;
-  color: #d8d8d8ab;
+  color: var(--black-color);
 }
 
 .contact_us .form-container {
@@ -1311,6 +1311,10 @@ button {
   }
   .contact_us .form-container .max-width {
     font-size: 0.85rem;
+  }
+  .contact_information .box p {
+    font-weight: 500;
+    font-size: 0.55em;
   }
 }
 
@@ -2121,6 +2125,7 @@ footer .bottom-footer ul li a span {
   font-size: 1.5em;
   width: 100%;
   max-width: 400px;
+  margin-inline: auto;
   text-align: center;
   margin-bottom: 0.25em;
 }
@@ -2129,7 +2134,7 @@ footer .bottom-footer ul li a span {
   width: 100%;
   max-width: 400px;
   text-align: center;
-  margin-bottom: 0.25em;
+  margin-inline: auto;
 }
 
 #patientTestimonies .col-40 .max-width {
@@ -2155,18 +2160,32 @@ footer .bottom-footer ul li a span {
   box-shadow: 1px 1px 1px 1px rgba(21, 57, 83, 0.4);
 }
 #patientTestimonies .relative-container-right img {
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
   margin-right: 0.5em;
+  margin-top: 0.25em;
 }
 #patientTestimonies .relative-container-right .flex-row .flex {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
-#patientTestimonies .relative-container-right .flex-row div {
+#patientTestimonies .relative-container-right .flex-row div,
+#patientTestimonies .more-testifiers {
   width: 100%;
+  max-width: 600px;
+  display: block;
+}
+#patientTestimonies .more-testifiers {
+  text-align: left;
+}
+
+#patientTestimonies .relative-container-right .flex-row .content {
+  width: 80%;
+  max-width: 500px;
+  margin-right: auto;
+  padding-top: 0;
 }
 
 #patientTestimonies .relative-container-right .testifier p {
@@ -2178,4 +2197,142 @@ footer .bottom-footer ul li a span {
   margin-bottom: 0;
   font-weight: 400;
   font-size: 0.7em;
+}
+
+@media (min-width: 600px) {
+  #patientTestimonies .relative-container-right .flex-row div,
+  #patientTestimonies .more-testifiers {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  #patientTestimonies {
+    position: relative;
+  }
+  #patientTestimonies .col-60 {
+    display: block;
+  }
+  #patientTestimonies .col-40 {
+    padding: 0 1em;
+    width: 40%;
+    margin-top: -135px;
+  }
+  #patientTestimonies .col-40 h3 {
+    font-size: 1.3em;
+    margin-inline: 0 auto;
+    text-align: left;
+    margin-bottom: 0.2em;
+    line-height: 0.9;
+  }
+  #patientTestimonies .col-40 p.text-green {
+    font-size: 0.7em;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin-inline: 0 auto;
+    line-height: 1.2;
+  }
+  #patientTestimonies .relative-container-right .absolute-wrapper {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+  #patientTestimonies .relative-container-right .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #patientTestimonies .relative-container-right .white-bg {
+    background-color: rgb(239, 239, 239);
+    background-color: rgba(239, 239, 239, 0.8);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  #patientTestimonies .relative-container-right .flex-row div,
+  #patientTestimonies .more-testifiers {
+    width: 100%;
+    max-width: 280px;
+    display: block;
+  }
+  #patientTestimonies .relative-container-right .flex-row div {
+    margin-left: 0.2em;
+  }
+  #patientTestimonies .more-testifiers {
+    margin-inline: auto 0;
+    text-align: right;
+    margin-right: 3em;
+  }
+  #patientTestimonies .relative-container-right .testifier {
+    padding: 0.5em 0.4em;
+    margin-bottom: 1em;
+  }
+  #patientTestimonies .relative-container-right img {
+    height: 35px;
+    width: 35px;
+    margin-right: 0.25em;
+  }
+  #patientTestimonies .relative-container-right .flex-row .content {
+    width: 80%;
+    max-width: 250px;
+    margin-left: auto;
+    padding-top: 0;
+  }
+  #patientTestimonies .relative-container-right .testifier p {
+    font-size: 0.55em;
+  }
+  #patientTestimonies .relative-container-right .testifier h5 {
+    font-size: 0.55em;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1200px) {
+  #patientTestimonies .col-40 {
+    margin-top: -100px;
+  }
+  #patientTestimonies .col-40 h3 {
+    font-size: 1.8em;
+    max-width: 300px;
+    margin-bottom: 0.25em;
+  }
+  #patientTestimonies .col-40 p.text-green {
+    font-size: 0.75em;
+  }
+  #patientTestimonies .relative-container-right .absolute-wrapper {
+    top: 60%;
+  }
+}
+
+@media (min-width: 1600px) {
+  #patientTestimonies .col-40 {
+    margin-top: -140px;
+  }
+  #patientTestimonies .col-40 h3 {
+    font-size: 2.2em;
+    max-width: 400px;
+  }
+  #patientTestimonies .col-40 p.text-green {
+    font-size: 0.85em;
+  }
+  #patientTestimonies .relative-container-right img {
+    height: 60px;
+    width: 60px;
+    margin-right: 0.5em;
+  }
+  #patientTestimonies .relative-container-right .flex-row div,
+  #patientTestimonies .more-testifiers {
+    max-width: 400px;
+  }
+  #patientTestimonies .relative-container-right .testifier {
+    padding: 0.8em;
+    margin-bottom: 0.5em;
+  }
+  #patientTestimonies .relative-container-right .testifier p {
+    font-size: 0.65em;
+  }
+  #patientTestimonies .relative-container-right .testifier h5 {
+    font-size: 0.65em;
+  }
 }
