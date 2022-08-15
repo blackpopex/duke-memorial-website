@@ -335,11 +335,6 @@ button {
 .flex-column {
   flex-direction: column;
 }
-.fixed-width {
-  width: 100%;
-  width: 80px;
-  line-height: 1.2;
-}
 
 .white-bg {
   box-shadow: var(--default-box-shadow);
@@ -1150,10 +1145,14 @@ button {
 }
 .contact_us .form-container button {
   width: 100%;
-  background-color: var(--white-color);
+  background-color: var(--green-color);
+  color: var(--primary-color);
   font-size: 0.55em;
   padding: 0.3em 1em;
   margin-top: 1em;
+}
+.contact_us .form-container button .fa {
+  color: var(--primary-color);
 }
 
 @media (min-width: 600px) {
@@ -1287,7 +1286,6 @@ button {
   }
   .contact_us .form-container button {
     width: 50%;
-    background-color: var(--white-color);
     padding: 0.5em 1em;
   }
 }
@@ -1302,11 +1300,17 @@ button {
   .contact_us h3.small-font {
     font-size: 0.9em;
   }
+  .contact_us .form-container .max-width {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 1400px) {
   .toggle-width {
     width: 40%;
+  }
+  .contact_us .form-container .max-width {
+    font-size: 0.85rem;
   }
 }
 
@@ -1370,18 +1374,18 @@ button {
 }
 
 /******FOOTER******/
-.specific-width {
+footer .specific-width {
   width: 100%;
   text-align: center;
   display: block;
   max-width: 200px;
   margin-inline: auto;
 }
-.fixed-heading-width {
+footer .fixed-heading-width {
   max-width: 200px;
   margin-inline: auto;
 }
-.fixed-width {
+footer .fixed-width {
   max-width: 300px;
   margin-inline: auto;
 }
@@ -1424,7 +1428,7 @@ footer img {
   max-width: 200px;
   margin-inline: auto;
 }
-.right-bottom-box-shadow {
+footer .right-bottom-box-shadow {
   max-width: 400px;
   margin-inline: auto;
   background-color: var(--primary-color);
@@ -1434,12 +1438,12 @@ footer img {
   border-radius: 0 0 24px 0;
 }
 
-.right-bottom-box-shadow h5 {
+footer .right-bottom-box-shadow h5 {
   margin-top: 1.5em;
   margin-bottom: 0;
   line-height: 0;
 }
-.right-bottom-box-shadow a .text-green {
+footer .right-bottom-box-shadow a .text-green {
   margin-top: 0;
 }
 
@@ -1512,17 +1516,17 @@ footer .bottom-footer ul li a span {
 }
 
 @media (min-width: 600px) {
-  .specific-width {
+  footer .specific-width {
     width: 100%;
     max-width: 500px;
     display: block;
     text-align: center;
   }
-  .specific-width div {
+  footer .specific-width div {
     width: 100%;
     text-align: center;
   }
-  .fixed-heading-width {
+  footer .fixed-heading-width {
     max-width: 500px;
   }
 
@@ -1554,12 +1558,12 @@ footer .bottom-footer ul li a span {
   footer img {
     max-width: 120px;
   }
-  .right-bottom-box-shadow {
+  footer .right-bottom-box-shadow {
     max-width: 380px;
     margin-inline: 0 auto;
     margin-top: 2em;
   }
-  .right-bottom-box-shadow h5 {
+  footer .right-bottom-box-shadow h5 {
     font-size: 0.65em;
   }
   footer address {
@@ -1602,7 +1606,7 @@ footer .bottom-footer ul li a span {
 }
 
 @media (min-width: 992px) {
-  .specific-width {
+  footer .specific-width {
     max-width: 600px;
   }
   footer .col-40 .flex ul:last-child {
@@ -1616,7 +1620,7 @@ footer .bottom-footer ul li a span {
 }
 
 @media (min-width: 1200px) {
-  .specific-width {
+  footer .specific-width {
     max-width: 700px;
   }
   footer section:first-child {
@@ -1625,11 +1629,11 @@ footer .bottom-footer ul li a span {
   footer img {
     max-width: 150px;
   }
-  .right-bottom-box-shadow {
+  footer .right-bottom-box-shadow {
     max-width: 420px;
     margin-right: auto;
   }
-  .right-bottom-box-shadow h5 {
+  footer .right-bottom-box-shadow h5 {
     font-size: 0.7em;
   }
 
@@ -1653,13 +1657,12 @@ footer .bottom-footer ul li a span {
   footer section:first-child {
     padding: 2em 0;
   }
-  .specific-width {
+  footer .specific-width {
     max-width: 900px;
   }
   footer .col-40 .flex {
     width: 80%;
     max-width: 700px;
-
     margin-right: auto;
   }
   footer .col-40 .flex ul:last-child {
@@ -1667,7 +1670,7 @@ footer .bottom-footer ul li a span {
     margin-inline: auto 0;
     padding-left: 1.5em;
   }
-  .right-bottom-box-shadow {
+  footer .right-bottom-box-shadow {
     width: 100%;
     max-width: 400px;
     margin-inline: auto 0;
@@ -1676,7 +1679,7 @@ footer .bottom-footer ul li a span {
     max-width: 180px;
   }
 
-  .right-bottom-box-shadow h5 {
+  footer .right-bottom-box-shadow h5 {
     font-size: 0.75em;
   }
 
@@ -1917,7 +1920,7 @@ footer .bottom-footer ul li a span {
   }
 
   #adverts h3,
-  h5.max-width {
+  #adverts .wrapper div h5 {
     text-align: left;
   }
   #adverts h3 {
@@ -1959,6 +1962,10 @@ footer .bottom-footer ul li a span {
   #adverts h3 {
     max-width: 500px;
     margin-inline: 0 auto;
+  }
+
+  #adverts .wrapper div h5 {
+    font-weight: bold;
   }
 
   #adverts .max-width:last-child h2 {
@@ -2117,13 +2124,14 @@ footer .bottom-footer ul li a span {
   text-align: center;
   margin-bottom: 0.25em;
 }
-#patientTestimonies .col-40 .text-green {
+#patientTestimonies .col-40 p.text-green {
   font-size: 0.75em;
   width: 100%;
-  max-width: 700px;
+  max-width: 400px;
   text-align: center;
   margin-bottom: 0.25em;
 }
+
 #patientTestimonies .col-40 .max-width {
   width: 100%;
   max-width: 600px;
@@ -2133,6 +2141,11 @@ footer .bottom-footer ul li a span {
   padding: 0.8em;
   margin-bottom: 1em;
 }
+
+#patientTestimonies .relative-container-right .testifier h5 {
+  text-align: left;
+}
+
 #patientTestimonies .relative-container-right .white-bg {
   background-color: var(--white-color);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
