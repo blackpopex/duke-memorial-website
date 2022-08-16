@@ -671,16 +671,17 @@ button {
     position: relative;
     display: inline-block;
   }
-  .navbar-top .inline-block .dropdown-content {
+  .topnavbar .dropdown-content {
     position: absolute;
     min-width: 250px;
     padding: 1em 0.5em;
     z-index: 9999;
     right: 0;
-    box-shadow: var(--default-box-shadow);
-    transform: translateY(50px);
+    height: 0;
     opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    box-shadow: var(--default-box-shadow);
+    transition: height 1s ease, opacity 0.5s ease;
+    overflow-y: hidden;
   }
   .navbar-top .inline-block .dropdown-content li {
     display: block;
@@ -691,10 +692,10 @@ button {
     padding: 0.5em 0.8em;
     text-align: left;
     color: var(--primary-color);
-    font-weight: 300;
+    font-weight: 280;
   }
-  .navbar-top .inline-block .dropdown:hover .dropdown-content {
-    transform: translateY(0);
+  .navbar-top .inline-block .dropdown_content_activated {
+    height: 350px;
     opacity: 1;
   }
 
