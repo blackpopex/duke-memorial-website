@@ -312,10 +312,6 @@ button {
   color: var(--white-color);
 }
 
-.small-width-heading {
-  width: 100%;
-  max-width: 200px;
-}
 .text-right {
   text-align: right;
 }
@@ -1853,16 +1849,7 @@ footer .bottom-footer ul li a span {
   }
 }
 
-/*******OUR PRIORITY******/
 /***Adverts***/
-.bg-hospital-image {
-  background-image: url("../assets/other-photos/Untitled-12.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  min-height: 600px;
-  position: relative;
-}
 #adverts img {
   width: 100%;
   max-width: 400px;
@@ -2002,7 +1989,156 @@ footer .bottom-footer ul li a span {
 }
 
 /*******CLINIC DAYS******/
+#clinicDays {
+  padding: 0;
+  position: relative;
+}
 
+@media (min-width: 768px) {
+  #clinicDays {
+    display: block;
+    padding: 0 auto;
+  }
+  .bg-hospital-image {
+    background-image: url("../assets/bg-image/our-clinic-day/background-768px.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;
+    position: relative;
+  }
+  .transparent-absolute-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 440px;
+    background: hsl(206 55% 29% / 0.9);
+    backdrop-filter: blur(0.0000125rem);
+    z-index: 9;
+    padding: 2em 1em 1em;
+  }
+
+  #clinicDays .small-width-heading {
+    width: 100%;
+    text-align: right;
+    color: var(--white-color);
+  }
+
+  .time-table-wrapper {
+    width: 100%;
+    display: block;
+    max-width: 440px;
+    margin-left: auto;
+  }
+
+  #clinicDays table {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: none;
+    margin-bottom: 1em;
+  }
+  #clinicDays table tr {
+    width: 100%;
+    line-height: 1.8;
+  }
+  #clinicDays table tr th,
+  #clinicDays table tr td {
+    text-align: left;
+    font-family: var(--inter-fontFamily);
+    color: var(--white-color);
+  }
+  #clinicDays table tr th {
+    font-size: 0.6em;
+    width: 50%;
+    font-weight: 500;
+  }
+  #clinicDays table tr td {
+    width: auto;
+    font-weight: 300;
+    font-size: 0.55em;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-hospital-image {
+    background-image: url("../assets/bg-image/our-clinic-day/background-992.jpg");
+    min-height: 450px;
+  }
+  .time-table-wrapper {
+    margin-top: 1.55em;
+  }
+  .transparent-absolute-bg {
+    max-width: 440px;
+  }
+
+  #clinicDays .small-width-heading {
+    max-width: 300px;
+    margin-inline: auto 0;
+  }
+  #clinicDays table tr {
+    line-height: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .bg-hospital-image {
+    background-image: url("../assets/bg-image/our-clinic-day/hospital-1200.jpg");
+    min-height: 500px;
+  }
+  .transparent-absolute-bg {
+    max-width: 500px;
+  }
+  .time-table-wrapper {
+    max-width: 500px;
+  }
+  #clinicDays .small-width-heading {
+    max-width: 300px;
+    margin-inline: auto 0;
+    margin-right: 1em;
+  }
+
+  #clinicDays table tr {
+    line-height: 2.2;
+  }
+  #clinicDays table tr th {
+    font-size: 0.65em;
+  }
+  #clinicDays table tr td {
+    font-size: 0.6em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-hospital-image {
+    background-image: url("../assets/bg-image/our-clinic-day/background-1400px.jpg");
+    min-height: 600px;
+  }
+  .transparent-absolute-bg {
+    max-width: 600px;
+  }
+  .time-table-wrapper {
+    margin-top: 3.5em;
+  }
+  #clinicDays table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1600px) {
+  .transparent-absolute-bg {
+    max-width: 750px;
+  }
+  #clinicDays table tr {
+    line-height: 2.3;
+  }
+  #clinicDays table tr th {
+    font-size: 0.68em;
+    font-weight: 500;
+  }
+}
 /*******RESOURCES******/
 #patientResources .resources-wrapper {
   margin-top: 1.5em;
@@ -2060,6 +2196,9 @@ footer .bottom-footer ul li a span {
     line-height: 1.2;
     font-size: 0.8em;
     text-align: center;
+    width: 100%;
+    max-width: 100px;
+    margin-inline: auto;
   }
 }
 @media (min-width: 992px) {
