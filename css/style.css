@@ -55,6 +55,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 h6,
 p,
 body,
@@ -350,6 +351,11 @@ button {
 .faint-horizontal-line {
   border: 1px solid var(--faint-horizontal-line);
   margin: 1.5em 0;
+}
+
+section h1 {
+  margin-bottom: 0.5em;
+  line-height: 0.75;
 }
 
 .col-20,
