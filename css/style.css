@@ -2478,3 +2478,22 @@ footer .bottom-footer ul li a span {
     font-size: 0.65em;
   }
 }
+
+/************MAP AND DIRECTION****************/
+.section-bg-image {
+  background-image: url("../assets/bg-image/section-bg-image/Untitled-9.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+#map_Direction {
+  background-image: url("../assets/bg-image/section-bg-image/Untitled-9.jpg");
+}
+#Refer_Patient {
+  background-image: url("../assets/bg-image/section-bg-image/Untitled-7.jpg");
+}
+#About_Us {
+  background-image: url("../assets/bg-image/section-bg-image/Untitled-8.jpg");
+}
