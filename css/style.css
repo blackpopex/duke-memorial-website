@@ -364,6 +364,28 @@ section h1 {
   line-height: 0.75;
 }
 
+.flex-reverse {
+  flex-direction: column-reverse;
+}
+.flex-reverse .col-30 {
+  margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+  .flex-reverse {
+    flex-direction: row;
+  }
+  .flex-reverse .col-30 {
+    margin-top: 0;
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .flex-reverse .col-30 {
+    display: block;
+  }
+}
+
 .col-20,
 .col-25,
 .col-30,
@@ -558,6 +580,7 @@ section h1 {
   margin-right: auto;
   display: block;
   opacity: 0;
+  bottom: 0;
   transition: opacity 1.5s ease-in;
 }
 .opacity_visible {
@@ -611,6 +634,10 @@ section h1 {
   overflow: hidden;
   transition: max-height 0.5s ease-out;
   padding-left: 1.5em;
+}
+#menu_bar .dropdown .dropdown-content h5 {
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 #menu_bar .dropdown .dropdown-content ul {
   padding-left: 0.5em;
@@ -1436,6 +1463,9 @@ footer ul li {
 footer ul li a {
   color: var(--white-color);
 }
+footer .col-40 {
+  margin-top: 1em;
+}
 footer .col-40 .flex {
   flex-direction: row;
   align-items: flex-start;
@@ -1568,6 +1598,9 @@ footer .bottom-footer ul li a span {
   }
   footer .specific-width h5 {
     margin-top: 1em;
+  }
+  footer .col-40 {
+    margin-top: 0;
   }
 
   footer .col-40 .flex {
@@ -2502,7 +2535,7 @@ footer .bottom-footer ul li a span {
   }
 }
 
-/************MAP AND DIRECTION****************/
+/************REST OF THE PAGE ****************/
 .section-bg-image {
   background-image: url("../assets/bg-image/section-bg-image/Untitled-9.jpg");
   background-repeat: no-repeat;
@@ -2520,3 +2553,5 @@ footer .bottom-footer ul li a span {
 #About_Us {
   background-image: url("../assets/bg-image/section-bg-image/Untitled-8.jpg");
 }
+
+/*********************MAP AND DIRECTION ************************/
