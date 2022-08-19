@@ -397,60 +397,61 @@
 
     <!--------------------------------MAIN SECTION STARTS -------------------------------------->
     <main>
-      <section id="Meet_the_team">
+      <section id="Book_Appointment">
         <div class="container">
           <div class="flex align-start flex-reverse">
             <!--column left-->
             <div class="column-left col-30">
               <aside>
                 <div class="bg-white">
-                  <h5 class="text-primary">Patient Care</h5>
-                  <ul class="margin-bottom">
-                    <li>
-                      <a href="../patient-care/book-appointment.html"
-                        >Book Appointment</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../patient-care/your-hospital-visit.html"
-                        >Your Hospital Visit</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="../patient-care/what-to-expect.html"
-                        class="text-active"
-                        >What to Expect</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../patient-care/pay-a-bill.html">Pay a Bill</a>
-                    </li>
-                    <li>
-                      <a href="../patient-care/patient-stories.html"
-                        >Patient Stories</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../patient-care/frequently-asked-question.html"
-                        >Frequently Asked Question</a
-                      >
-                    </li>
-                  </ul>
-
-                  <h5 class="text-primary">Visitors</h5>
-                  <ul class="margin-bottom">
-                    <li>
-                      <a href="../../visitors/visitors-policy.html"
-                        >Visitor Policy</a
-                      >
-                    </li>
-                    <li>
-                      <a href="../../visitors/visitors-information.html"
-                        >Visitor Information</a
-                      >
-                    </li>
-                  </ul>
+                  <div class="first-sidebar-container">
+                    <h5 class="text-primary">Patient Care</h5>
+                    <ul class="margin-bottom">
+                      <li>
+                        <a href="../patient-care/book-appointment.html"
+                          >Book Appointment</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../patient-care/your-hospital-visit.html"
+                          >Your Hospital Visit</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../patient-care/what-to-expect.html"
+                          class="text-active"
+                          >What to Expect</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../patient-care/pay-a-bill.html">Pay a Bill</a>
+                      </li>
+                      <li>
+                        <a href="../patient-care/patient-stories.html"
+                          >Patient Stories</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../patient-care/frequently-asked-question.html"
+                          >Frequently Asked Question</a
+                        >
+                      </li>
+                    </ul>
+                    <h5 class="text-primary">Visitors</h5>
+                    <ul class="margin-bottom">
+                      <li>
+                        <a href="../../visitors/visitors-policy.html"
+                          >Visitor Policy</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../visitors/visitors-information.html"
+                          >Visitor Information</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
 
                   <div class="sidebar sub-container">
                     <ul>
@@ -472,7 +473,7 @@
                           Reqeust Appointment</a
                         >
                       </li>
-                      <li class="box faq bg-white">
+                      <li class="box faq">
                         <a
                           href="../../patient-and-visitors/patient-care/frequently-asked-question.html"
                         >
@@ -489,12 +490,12 @@
             <div class="column-right col-70">
               <div class="wrapper">
                 <div>
-                  <h5>
+                  <h4 class="text-primary">
                     If this is a medical emergency, please call +1-202-555-0146
-                  </h5>
+                  </h4>
 
-                  <div class="flex align-start">
-                    <div class="col-50">
+                  <div class="flex align-start book-appointment-heading">
+                    <div class="col-50 schedule">
                       <h5 class="text-primary">Schedule Online</h5>
                       <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -535,30 +536,32 @@
                           </div>
                           <div class="column-48">
                             <label for="dateofbirth">Date of Birth:</label>
-                            <div class="full-width">
-                              <div class="input-30">
-                                <input
-                                  type="month"
-                                  name="date-of-birth"
-                                  id="dateofbirth"
-                                  placeholder="Month"
-                                />
-                              </div>
-                              <div class="input-30">
-                                <input
-                                  type="day"
-                                  name="date-of-birth"
-                                  id="dateofbirth"
-                                  placeholder="Day"
-                                />
-                              </div>
-                              <div class="input-30">
-                                <input
-                                  type="year"
-                                  name="date-of-birth"
-                                  id="dateofbirth"
-                                  placeholder="Year"
-                                />
+                            <div class="flex-row">
+                              <div class="full-width">
+                                <div class="input-30">
+                                  <input
+                                    type="text"
+                                    name="date-of-birth"
+                                    id="dateofbirth"
+                                    placeholder="Month"
+                                  />
+                                </div>
+                                <div class="input-30">
+                                  <input
+                                    type="text"
+                                    name="date-of-birth"
+                                    id="dateofbirth"
+                                    placeholder="Day"
+                                  />
+                                </div>
+                                <div class="input-30">
+                                  <input
+                                    type="text"
+                                    name="date-of-birth"
+                                    id="dateofbirth"
+                                    placeholder="Year"
+                                  />
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -567,7 +570,12 @@
                         <div class="tr-two input-wrapper">
                           <div class="column-48">
                             <label for="gender">Gender:</label>
-                            <select name="gender" id="gender">
+                            <select
+                              name="gender"
+                              id="gender"
+                              value="Select Gender"
+                            >
+                              <option value="">Select Gender</option>
                               <option value="male">Male</option>
                               <option value="female">Female</option>
                             </select>
@@ -600,9 +608,8 @@
                         </div>
                       </div>
                       <button type="submit" class="btn bg-green text-white">
-                        Submit Request<i
-                          class="fa fa-fw fa-angle-double-right"
-                        ></i>
+                        Submit Request
+                        <i class="fa fa-fw fa-angle-double-right"></i>
                       </button>
                     </form>
                   </div>

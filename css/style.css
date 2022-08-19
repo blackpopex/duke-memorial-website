@@ -1601,6 +1601,7 @@ footer .bottom-footer ul li a span {
   }
   footer .col-40 {
     margin-top: 0;
+    width: 100%;
   }
 
   footer .col-40 .flex {
@@ -1670,6 +1671,9 @@ footer .bottom-footer ul li a span {
   }
   footer .col-40 .flex ul:last-child {
     width: 60%;
+  }
+  footer .col-40 {
+    width: 40%;
   }
 
   footer .social-icon-wrapper {
@@ -2555,6 +2559,102 @@ footer .bottom-footer ul li a span {
 }
 
 /******************** SIDEBAR *******************************/
+.col-30 aside {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+.col-30 aside h5 {
+  margin-bottom: 0;
+}
+.col-30 aside:last-child h5 {
+  margin-bottom: 0.5em;
+}
+.col-30 aside {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.col-30 aside:last-child ul {
+  margin-bottom: 1.5em;
+}
+
+.col-30 aside ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.col-30 aside ul li {
+  margin-bottom: 0.15em;
+  line-height: 1;
+  padding: 0.25em 0;
+  background-color: var(--white-color);
+  display: block;
+}
+.col-30 aside ul li:last-child {
+  margin-bottom: 0;
+}
+.col-30 aside ul li a {
+  color: var(--primary-color);
+}
+.col-30 aside ul li a {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+.col-30 aside ul li a iconify-icon {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+.col-30 aside .sub-container ul li {
+  background-color: rgb(255, 255, 255);
+  padding: 0.5em 0.5em;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+  .col-30 aside .sub-container ul li {
+    padding: 0.8em;
+    margin-bottom: 0.5em;
+  }
+  .col-30 aside .sub-container ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .col-30 aside {
+    width: 100%;
+    max-width: 220px;
+    margin-inline: 0 auto;
+  }
+  .col-30 aside .sub-container ul li {
+    padding: 0.5em;
+    margin-bottom: 0.25em;
+  }
+  .col-30 aside .sub-container ul li:nth-child(even) {
+    background-color: var(--primary-color);
+  }
+  .col-30 aside .sub-container ul li:last-child {
+    background-color: var(--green-color);
+  }
+  .col-30 aside .sub-container ul li:nth-child(even) a {
+    color: var(--white-color);
+  }
+  .first-sidebar-container {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+@media (min-width: 1600px) {
+  .col-30 aside {
+    max-width: 260px;
+  }
+}
 
 /*********************MAP AND DIRECTION ************************/
 
@@ -2649,36 +2749,37 @@ footer .bottom-footer ul li a span {
   margin-inline: auto;
 }
 
-#Refer_a_Patient .form {
+.form {
   width: 100%;
   max-width: 600px;
   margin-inline: 0 auto;
   margin-top: 1.5em;
 }
-#Refer_a_Patient .form form {
+.form form {
   width: inherit;
 }
-#Refer_a_Patient .form form h5 {
+.form form h5 {
   margin-bottom: 1em;
 }
-#Refer_a_Patient .form form .input-wrapper {
+.form form .input-wrapper {
   margin-bottom: 1.25em;
 }
-#Refer_a_Patient .column-48 {
+.column-48,
+.column-100 {
   width: 100%;
 }
-#Refer_a_Patient .form form label {
+.form form label {
   font-size: 0.65em;
   color: var(--primary-color);
   width: 100%;
   display: block;
   margin-bottom: 0.25em;
 }
-#Refer_a_Patient .form form input[type="text"],
-#Refer_a_Patient .form form input[type="date"],
-#Refer_a_Patient .form form select,
-#Refer_a_Patient .form form textarea,
-#Refer_a_Patient .form form button [type="sumbit"] {
+.form form input[type="text"],
+.form form input[type="date"],
+.form form select,
+.form form textarea,
+.form form button [type="sumbit"] {
   width: 100%;
   display: block;
   box-sizing: border-box;
@@ -2694,7 +2795,7 @@ footer .bottom-footer ul li a span {
   box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   font-family: var(--slabo-fontFamily-links-buttons-paragraph);
 }
-#Refer_a_Patient .form form button.btn {
+.form form button.btn {
   border-radius: 6px;
 }
 
@@ -2702,7 +2803,7 @@ footer .bottom-footer ul li a span {
   #Refer_a_Patient .align-start {
     flex-direction: column;
   }
-  #Refer_a_Patient .align-start .col-30 {
+  .align-start .col-30 {
     width: 80%;
     margin-inline: auto;
   }
@@ -2710,7 +2811,7 @@ footer .bottom-footer ul li a span {
     max-width: 500px;
     margin-inline: 0 auto;
   }
-  #Refer_a_Patient .form {
+  .form {
     max-width: 500px;
     margin-inline: 0 auto;
   }
@@ -2718,6 +2819,10 @@ footer .bottom-footer ul li a span {
 @media (min-width: 992px) {
   #Refer_a_Patient .align-start {
     flex-direction: row;
+  }
+  .align-start .col-30 {
+    width: 30%;
+    margin-inline: 0 auto;
   }
 
   #Refer_a_Patient .col-70 {
@@ -2740,27 +2845,27 @@ footer .bottom-footer ul li a span {
     max-width: 800px;
     margin-inline: 0 auto;
   }
-  #Refer_a_Patient .form {
+  .form {
     max-width: 600px;
     margin-inline: 0 auto;
   }
-  #Refer_a_Patient .form form .input-wrapper {
+  .form form .input-wrapper {
     margin-bottom: 0.5em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  #Refer_a_Patient .column-48 {
+  .form .column-48 {
     width: 49%;
   }
 
-  #Refer_a_Patient .form form input[type="text"],
-  #Refer_a_Patient .form form input[type="date"],
-  #Refer_a_Patient .form form select,
-  #Refer_a_Patient .form form textarea,
-  #Refer_a_Patient .form form button [type="sumbit"],
-  #Refer_a_Patient .form form button.btn {
+  .form form input[type="text"],
+  .form form input[type="date"],
+  .form form select,
+  .form form textarea,
+  .form form button [type="sumbit"],
+  .form form button.btn {
     border-radius: 0;
   }
 }
@@ -2779,7 +2884,7 @@ footer .bottom-footer ul li a span {
     padding: 2em 1.5em;
     max-width: 400px;
   }
-  #Refer_a_Patient .form {
+  .form {
     max-width: 700px;
     margin-inline: 0 auto;
   }
@@ -2792,5 +2897,69 @@ footer .bottom-footer ul li a span {
 @media (min-width: 1800px) {
   #Refer_a_Patient .col-70 {
     max-width: 900px;
+  }
+}
+
+/**********BOOK APPOINMENT************/
+
+#Book_Appointment h5:first-child {
+  margin-bottom: 1em;
+}
+#Book_Appointment .schedule {
+  margin-bottom: 1em;
+}
+#Book_Appointment .column-48 .flex-row .full-width {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#Book_Appointment .column-48 .flex-row .full-width {
+  width: 100%;
+}
+#Book_Appointment .column-48 .flex-row .full-width .input-30 {
+  width: 32%;
+}
+#Book_Appointment .column-48 .full-width input[type="text"] {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #Book_Appointment .col-70 {
+    width: 100%;
+  }
+  #Book_Appointment .col-70 h4 {
+    margin-bottom: 1.5em;
+  }
+  #Book_Appointment .schedule {
+    margin-bottom: 0;
+    padding-right: 1em;
+  }
+
+  #Book_Appointment .wrapper .book-appointment-heading:last-child .col-50 {
+    padding-left: 0.5em;
+  }
+
+  #Book_Appointment .wrapper .book-appointment-heading h5 {
+    margin-bottom: 0.5em;
+  }
+  #Book_Appointment .wrapper .book-appointment-heading p {
+    max-width: 325px;
+  }
+}
+@media (min-width: 992px) {
+  #Book_Appointment .col-70 {
+    width: 70%;
+    margin-inline: 0 auto;
+  }
+  #Book_Appointment .schedule {
+    margin-bottom: 0;
+    padding-right: 1em;
+  }
+  #Book_Appointment .wrapper .book-appointment-heading:last-child .col-50 {
+    padding-left: 0.5em;
+  }
+  #Book_Appointment .wrapper .book-appointment-heading p {
+    max-width: 350px;
   }
 }
