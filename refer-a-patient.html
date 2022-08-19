@@ -379,9 +379,9 @@
 
     <!--------------------------------MAIN SECTION STARTS -------------------------------------->
     <main>
-      <section id="map">
+      <section id="Refer_a_Patient">
         <div class="container">
-          <div class="flex align-start">
+          <div class="flex align-start margin-bottom">
             <!--column left-->
             <div class="column-left col-70">
               <div>
@@ -403,15 +403,17 @@
 
             <!--column right-->
             <div class="column-right col-30">
-              <div class="box bg-next-primary">
+              <div class="box bg-next-primary-color">
                 <h5 class="text-center">Referring Provider Asistance</h5>
-                <hr class="faint-horizontal-line" />
+                <div class="faint-horizontal-line"></div>
                 <p>
                   If you have any questions during any part of the referral
                   process or about the status of your patient, please call our
                   referring provider hotline:
                 </p>
-                <a href="#/" class="text-primary text-left">+1-202-555-0146 </a>
+                <a href="#/" class="text-primary text-left"
+                  >+1-202-555-0146, +1-202-555-0146,
+                </a>
               </div>
             </div>
           </div>
@@ -452,7 +454,7 @@
                     </div>
                   </div>
                 </div>
-                <div>
+                <div class="margin-top">
                   <h5 class="text-primary">Patient's Information</h5>
                   <div class="tr-one input-wrapper">
                     <div class="column-48">
@@ -486,26 +488,33 @@
                   <div class="tr-two input-wrapper">
                     <div class="column-48">
                       <label for="gender">Gender:</label>
-                      <select name="gender" id="gender">
+                      <select name="gender" id="gender" value="Select Gender">
+                        <option value="">Select Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                       </select>
                     </div>
                   </div>
                 </div>
-                <div>
+                <div class="margin-top">
                   <h5 class="text-primary">Referral Information</h5>
                   <div class="tr-one input-wrapper">
                     <div class="column-48">
                       <label for="priorityreferral">Referral Priority:</label>
-                      <select name="Priority-referral" id="priorityreferral">
-                        <option value="emergency">emergency</option>
-                        <option value="Calm">calm</option>
+                      <select
+                        name="Priority-referral"
+                        id="priorityreferral"
+                        value="Select Priority"
+                      >
+                        <option value="Select Priority">Select Priority</option>
+                        <option value="Emergency">Emergency</option>
+                        <option value="Calm">Calm</option>
+                        <option value="Stable">Stable</option>
                       </select>
                     </div>
                   </div>
                   <div class="column-100">
-                    <label for="reasonforreferral">Reason for referral:</label>
+                    <label for="reasonforreferral">Reason for Referral:</label>
                     <textarea
                       name="reason-for-referral"
                       id="reasonforreferral"
@@ -515,7 +524,7 @@
                   </div>
                 </div>
                 <button type="submit" class="btn bg-green text-white">
-                  Submit <i class="fa fa-angle-double-right"></i>
+                  Submit Request <i class="fa fa-angle-double-right"></i>
                 </button>
               </form>
             </div>

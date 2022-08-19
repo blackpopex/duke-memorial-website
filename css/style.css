@@ -2623,3 +2623,174 @@ footer .bottom-footer ul li a span {
     max-width: 900px;
   }
 }
+
+/***********REFER A PATIENT**********/
+#Refer_a_Patient .col-70 {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 1em;
+}
+#Refer_a_Patient .col-30 .box {
+  padding: 1.5em;
+}
+#Refer_a_Patient .col-30 .box a {
+  font-weight: 600;
+}
+#Refer_a_Patient .col-30 .box p {
+  margin-bottom: 0;
+}
+
+#Refer_a_Patient .faint-horizontal-line {
+  border: 1px solid #b3b3b3;
+  margin: 0.5em 0;
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+#Refer_a_Patient .form {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: 0 auto;
+  margin-top: 1.5em;
+}
+#Refer_a_Patient .form form {
+  width: inherit;
+}
+#Refer_a_Patient .form form h5 {
+  margin-bottom: 1em;
+}
+#Refer_a_Patient .form form .input-wrapper {
+  margin-bottom: 1.25em;
+}
+#Refer_a_Patient .column-48 {
+  width: 100%;
+}
+#Refer_a_Patient .form form label {
+  font-size: 0.65em;
+  color: var(--primary-color);
+  width: 100%;
+  display: block;
+  margin-bottom: 0.25em;
+}
+#Refer_a_Patient .form form input[type="text"],
+#Refer_a_Patient .form form input[type="date"],
+#Refer_a_Patient .form form select,
+#Refer_a_Patient .form form textarea,
+#Refer_a_Patient .form form button [type="sumbit"] {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  font-size: 0.6em;
+  border: none;
+  outline: none;
+  resize: none;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  color: #222222;
+  background-color: var(--next-primary-color);
+  border-radius: 6px;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  font-family: var(--slabo-fontFamily-links-buttons-paragraph);
+}
+#Refer_a_Patient .form form button.btn {
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  #Refer_a_Patient .align-start {
+    flex-direction: column;
+  }
+  #Refer_a_Patient .align-start .col-30 {
+    width: 80%;
+    margin-inline: auto;
+  }
+  #Refer_a_Patient .box {
+    max-width: 500px;
+    margin-inline: 0 auto;
+  }
+  #Refer_a_Patient .form {
+    max-width: 500px;
+    margin-inline: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  #Refer_a_Patient .align-start {
+    flex-direction: row;
+  }
+
+  #Refer_a_Patient .col-70 {
+    max-width: 500px;
+    margin-inline: 0 auto;
+  }
+  #Refer_a_Patient .col-30 .box {
+    padding: 1em 0.5em;
+  }
+  #Refer_a_Patient .align-start .col-30 {
+    width: 30%;
+    margin-inline: auto 0;
+  }
+  #Refer_a_Patient .box {
+    max-width: 500px;
+    margin-inline: 0 auto;
+  }
+  .contact-form-section p {
+    width: 100%;
+    max-width: 800px;
+    margin-inline: 0 auto;
+  }
+  #Refer_a_Patient .form {
+    max-width: 600px;
+    margin-inline: 0 auto;
+  }
+  #Refer_a_Patient .form form .input-wrapper {
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #Refer_a_Patient .column-48 {
+    width: 49%;
+  }
+
+  #Refer_a_Patient .form form input[type="text"],
+  #Refer_a_Patient .form form input[type="date"],
+  #Refer_a_Patient .form form select,
+  #Refer_a_Patient .form form textarea,
+  #Refer_a_Patient .form form button [type="sumbit"],
+  #Refer_a_Patient .form form button.btn {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #Refer_a_Patient .col-70 {
+    max-width: 680px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #Refer_a_Patient .col-70 {
+    max-width: 750px;
+  }
+  #Refer_a_Patient .col-30 .box {
+    padding: 2em 1.5em;
+    max-width: 400px;
+  }
+  #Refer_a_Patient .form {
+    max-width: 700px;
+    margin-inline: 0 auto;
+  }
+}
+@media (min-width: 1600px) {
+  #Refer_a_Patient .col-70 {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1800px) {
+  #Refer_a_Patient .col-70 {
+    max-width: 900px;
+  }
+}
