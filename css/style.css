@@ -128,7 +128,7 @@ a {
 
 .circular-dots li::before {
   content: ".";
-  color: var(--black-color);
+  color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 0;
@@ -157,6 +157,9 @@ a {
 
   .circular-dots li::before {
     font-size: 1.4rem;
+  }
+  .circular-dots li::before {
+    font-size: 2rem;
   }
 }
 
@@ -205,6 +208,9 @@ a {
   .circular-dots,
   .column-right ul li {
     font-size: 0.85rem;
+  }
+  .circular-dots li::before {
+    font-size: 2.2rem;
   }
 }
 
