@@ -99,10 +99,19 @@ h4 {
   font-size: 1.2rem;
 }
 
-h5 {
+h5,
+h6 {
   font-weight: var(--simi-bold-font-weight);
-  font-size: 1rem;
   margin-bottom: 0.5em;
+}
+
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.9rem;
+  font-family: var(--roboto-fontFamily-subHeading);
+  font-weight: 500;
 }
 
 p,
@@ -154,6 +163,13 @@ a {
   h4 {
     font-size: 1.4rem;
   }
+  h5 {
+    font-size: 1.05rem;
+  }
+
+  h6 {
+    font-size: 0.95rem;
+  }
 
   .circular-dots li::before {
     font-size: 1.4rem;
@@ -183,6 +199,10 @@ a {
   }
   h5 {
     font-size: 1.1rem;
+  }
+  h6 {
+    font-size: 1.05rem;
+    font-weight: 600;
   }
   p,
   .circular-dots,
@@ -450,6 +470,12 @@ section h1 {
   .col-60 {
     width: 60%;
   }
+  .col-70 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
   .col-70 {
     width: 70%;
   }
@@ -2961,5 +2987,78 @@ footer .bottom-footer ul li a span {
   }
   #Book_Appointment .wrapper .book-appointment-heading p {
     max-width: 350px;
+  }
+}
+
+/*******************WHY CHOOSE US****************/
+
+#Why-Choose-Us .column-right h4 {
+  margin-bottom: 1.5em;
+}
+#Why-Choose-Us .column-right .align-start {
+  width: 100%;
+  display: block;
+}
+#Why-Choose-Us .column-right img {
+  width: 100%;
+  max-width: 200px;
+  margin-inline: auto;
+}
+#Why-Choose-Us .column-right img:nth-child(odd) {
+  margin-bottom: 1.5em;
+}
+#Why-Choose-Us .column-right .align-start:nth-child(even) img {
+  margin-top: 1.5em;
+}
+
+@media (min-width: 600px) {
+  #Why-Choose-Us .column-right img {
+    max-width: 225px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Why-Choose-Us .column-right .align-start {
+    width: 100%;
+    display: flex;
+  }
+  #Why-Choose-Us .column-40 {
+    width: 30%;
+  }
+  #Why-Choose-Us .column-60 {
+    width: 70%;
+  }
+  #Why-Choose-Us .column-right img {
+    max-width: 150px;
+  }
+  #Why-Choose-Us .column-right .to-left {
+    margin-left: auto;
+  }
+  #Why-Choose-Us .column-right .to-right {
+    margin-right: auto;
+  }
+  #Why-Choose-Us .column-right img:nth-child(odd) {
+    margin-bottom: 0;
+  }
+  #Why-Choose-Us .column-right .align-start:nth-child(even) img {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  #Why-Choose-Us .column-right img {
+    max-width: 175px;
+  }
+}
+@media (min-width: 1600px) {
+  #Why-Choose-Us .column-right img {
+    max-width: 200px;
+  }
+  #Why-Choose-Us .column-right .h6-to-left {
+    margin-right: 4em;
+  }
+}
+@media (min-width: 1900px) {
+  #Why-Choose-Us .column-right .h6-to-left {
+    margin-right: 4em;
   }
 }
