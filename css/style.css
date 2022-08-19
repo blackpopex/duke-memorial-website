@@ -219,7 +219,7 @@ ul {
 }
 
 section {
-  padding: 4rem 0;
+  padding: 4em 0;
 }
 #sectionHeader {
   padding: 0;
@@ -2554,4 +2554,72 @@ footer .bottom-footer ul li a span {
   background-image: url("../assets/bg-image/section-bg-image/Untitled-8.jpg");
 }
 
+/******************** SIDEBAR *******************************/
+
 /*********************MAP AND DIRECTION ************************/
+
+#map aside address {
+  font-size: 0.65em;
+  font-style: normal;
+  font-family: var(--slabo-fontFamily-links-buttons-paragraph);
+  line-height: 1.25;
+  padding: 0;
+  width: 100%;
+  max-width: 250px;
+}
+#map aside div {
+  margin-bottom: 1.5em;
+}
+#map aside div:first-child {
+  line-height: 0.8;
+}
+#map aside a {
+  color: var(--primary-color);
+  line-height: 0;
+  font-weight: 500;
+}
+#map aside h5 {
+  line-height: 0.25;
+}
+
+#map .column-right img {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+@media (min-width: 600px) {
+  #map aside address {
+    max-width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  #map .flex-reverse .col-30 {
+    display: block;
+  }
+  #map .column-right img {
+    max-width: 400px;
+    margin-inline: auto 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #map .column-right img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  #map .column-right img {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1400px) {
+  #map .column-right img {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1600px) {
+  #map .column-right img {
+    max-width: 900px;
+  }
+}
