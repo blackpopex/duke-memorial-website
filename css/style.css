@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@400;500&family=Roboto:wght@300;400;700;900&family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500&family=Roboto:wght@300;400;700;900&family=Slabo+27px&display=swap");
 /*
     font-family: 'Inter', sans-serif;
 
@@ -20,6 +20,7 @@
   --inter-fontFamily: "Inter", sans-serif;
   --roboto-fontFamily-subHeading: "Roboto", sans-serif;
   --slabo-fontFamily-links-buttons-paragraph: "Slabo 27px", serif;
+  --playfair-font-family: "Playfair Display", serif;
   --thin-font-weight: 300;
   --simi-thin-font-weight: 400;
   --bold-font-weight: 800;
@@ -2990,6 +2991,41 @@ footer .bottom-footer ul li a span {
   }
 }
 
+/*****************OUR SERVICES *********************/
+#Our_Services .flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2em;
+}
+#Our_Services .flex-wrap .column-30 {
+  width: 30%;
+  max-width: 300px;
+  display: block;
+  margin-bottom: 1.5em;
+}
+#Our_Services .flex-wrap .column-30 h5 {
+  font-weight: 600;
+  font-family: var(--playfair-font-family);
+  font-size: 1.5em;
+  text-transform: lowercase;
+}
+#Our_Services .flex-wrap .column-30 ul li {
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  #Our_Services .flex-wrap .column-30 h5 {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 1600px) {
+  #Our_Services .flex-wrap .column-30 h5 {
+    font-size: 2em;
+  }
+}
+
 /*******************WHY CHOOSE US****************/
 
 #Why-Choose-Us .column-right h4 {
@@ -3062,3 +3098,5 @@ footer .bottom-footer ul li a span {
     margin-right: 4em;
   }
 }
+
+/********MISSION, VISION AND VALUES PAGE ALREADY RESPONSIVE*********/
