@@ -2988,6 +2988,116 @@ footer .bottom-footer ul li a span {
     max-width: 350px;
   }
 }
+
+/********************ABOUT US************************/
+#About_us .max-width {
+  max-width: 325px;
+  margin-inline: auto;
+  text-align: center;
+}
+#About_us .wrapper:last-child p {
+  margin-top: 1em;
+}
+#About_us .wrapper h6 {
+  font-weight: 400;
+}
+
+#About_us .img-container h4:first-child {
+  margin-bottom: 1em;
+}
+#About_us .img-container img {
+  margin-bottom: 1em;
+  max-width: 350px;
+  margin-inline: auto;
+}
+
+@media (min-width: 600px) {
+  #About_us .img-container img {
+    max-width: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .display-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 6px 5px;
+    width: 100%;
+    max-width: 550px;
+    margin-inline: auto;
+  }
+  .display-grid .item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #About_us .img-container img {
+    max-width: 100%;
+    margin-bottom: 0;
+    box-shadow: var(--default-box-shadow2);
+  }
+}
+
+@media (min-width: 992px) {
+  .display-grid {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .display-grid {
+    max-width: 650px;
+  }
+}
+@media (min-width: 1600px) {
+  .display-grid {
+    max-width: 750px;
+  }
+}
+@media (min-width: 1800px) {
+  #About_us .max-width {
+    max-width: 100%;
+  }
+}
+
+/*****Use same class for FAQ****/
+#About_us .accordion-container {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+#About_us .accordion-container .dropdown-btn {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.25em 0;
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+#About_us .accordion-container .dropdown-btn:after {
+  color: var(--primary-color);
+}
+
+#About_us .dropdown .dropdown-content {
+  padding: 0 1.5em 0;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+#About_us .col-70 .faint-horizontal-line {
+  margin: 0;
+}
+/*****Use same class for FAQ Ends****/
+
+@media (min-width: 768px) {
+  #About_us .accordion-container {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0 auto;
+  }
+}
+
 /*****************MEET THE TEAM*********************/
 
 #Meet_the_team .img-container {
