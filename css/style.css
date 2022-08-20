@@ -110,7 +110,7 @@ h5 {
   font-size: 1rem;
 }
 h6 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: var(--roboto-fontFamily-subHeading);
   font-weight: 500;
 }
@@ -202,7 +202,7 @@ a {
     font-size: 1.1rem;
   }
   h6 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 600;
   }
   p,
@@ -242,6 +242,7 @@ ul {
 section {
   padding: 4em 0;
 }
+
 #sectionHeader {
   padding: 0;
 }
@@ -251,7 +252,11 @@ section {
   width: min(90%, 90rem);
   padding: 0 0.2em;
 }
-
+@media (min-width: 768px) {
+  footer section {
+    padding: 4em 0 2em;
+  }
+}
 @media (min-width: 1400px) {
   .container {
     width: min(80%, 90rem);
@@ -3361,3 +3366,54 @@ footer .bottom-footer ul li a span {
 }
 
 /********MISSION, VISION AND VALUES PAGE ALREADY RESPONSIVE*********/
+/*******************FREQUENTLY ASKED QUESTION**********************/
+/*****Use same class for FAQ****/
+#fAQ .accordion-container {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+#fAQ .accordion-container .dropdown-btn {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.25em 0;
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+#fAQ .accordion-container .dropdown-btn:after {
+  color: var(--primary-color);
+}
+
+#fAQ .dropdown .dropdown-content {
+  padding: 0 1.5em 0;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+#fAQ .dropdown .dropdown-content span {
+  color: var(--black-color);
+  font-size: 0.75em;
+  font-family: var(--slabo-fontFamily-links-buttons-paragraph);
+}
+@media (min-width: 768px) {
+  #fAQ .accordion-container {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0 auto;
+  }
+  #fAQ .col-70 h6 {
+    font-weight: 500;
+  }
+}
+@media (min-width: 1200px) {
+  #fAQ .dropdown .dropdown-content span {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 1600px) {
+  #fAQ .dropdown .dropdown-content span {
+    font-size: 0.85em;
+  }
+}
