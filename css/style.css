@@ -3367,7 +3367,7 @@ footer .bottom-footer ul li a span {
 
 /********MISSION, VISION AND VALUES PAGE ALREADY RESPONSIVE*********/
 /*******************FREQUENTLY ASKED QUESTION**********************/
-/*****Use same class for FAQ****/
+
 #fAQ .accordion-container {
   width: 100%;
   max-width: 600px;
@@ -3415,5 +3415,73 @@ footer .bottom-footer ul li a span {
 @media (min-width: 1600px) {
   #fAQ .dropdown .dropdown-content span {
     font-size: 0.85em;
+  }
+}
+
+/*******************VISITORS POLICY**********************/
+#visitorsPolicy .wrapper div:not(:first-child) {
+  width: 100%;
+  max-width: 600px;
+}
+#visitorsPolicy .wrapper div:not(:first-child) .flex {
+  margin-bottom: 1em;
+}
+#visitorsPolicy .wrapper div:not(:first-child) .column-80 p {
+  width: 100%;
+  max-width: 300px;
+  margin-inline: auto;
+  text-align: center;
+}
+#visitorsPolicy iconify-icon {
+  font-size: 2em;
+  color: var(--primary-color);
+}
+#visitorsPolicy p b {
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  #visitorsPolicy .wrapper div:not(:first-child) .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  #visitorsPolicy .wrapper div:not(:first-child) .column-80 p {
+    max-width: 350px;
+    margin-inline: 0 auto;
+    text-align: left;
+  }
+  #visitorsPolicy iconify-icon {
+    font-size: 1.5em;
+  }
+  #visitorsPolicy p.bold-text {
+    width: 100%;
+    max-width: 500px;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  #visitorsPolicy p.bold-text {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #visitorsPolicy .wrapper div:not(:first-child) {
+    max-width: 700px;
+  }
+  #visitorsPolicy .wrapper div:not(:first-child) .column-80 p {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1600px) {
+  #visitorsPolicy .wrapper div:not(:first-child) {
+    max-width: 800px;
+  }
+  #visitorsPolicy .wrapper div:not(:first-child) .column-80 p {
+    max-width: 600px;
+  }
+  #visitorsPolicy iconify-icon {
+    font-size: 2em;
   }
 }
