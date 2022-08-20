@@ -2990,6 +2990,111 @@ footer .bottom-footer ul li a span {
     max-width: 350px;
   }
 }
+/*****************MEET THE TEAM*********************/
+
+#Meet_the_team .img-container {
+  width: 100%;
+}
+#Meet_the_team .img-container .person-wrapper {
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  margin-bottom: 1.5em;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+#Meet_the_team .img-container .person-wrapper .flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#Meet_the_team .img-container .person-wrapper .flex-row .img-column-30 {
+  width: 30%;
+}
+#Meet_the_team .img-container .person-wrapper .flex-row .img-column-70 {
+  width: 70%;
+  padding: 0.8em 0.5em;
+  line-height: 0.8;
+  background-color: var(--white-color);
+  height: 150px;
+}
+#Meet_the_team .img-container .img-column-30 img {
+  height: 150px;
+  width: 100%;
+}
+#Meet_the_team .flex-row .img-column-70 h6 {
+  font-size: 0.65em;
+  margin-bottom: 0.4em;
+}
+#Meet_the_team .flex-row .img-column-70 p.bold-text {
+  font-size: 0.5em;
+  font-weight: 600;
+  font-family: var(--roboto-fontFamily-subHeading);
+}
+#Meet_the_team .flex-row .img-column-70 div div p {
+  line-height: 1.2;
+}
+
+#Meet_the_team .flex-row .img-column-70 div div a {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-right: 1em;
+}
+
+@media (min-width: 600px) {
+  #Meet_the_team .flex-row .img-column-70 h6 {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width: 768px) {
+  #Meet_the_team .img-container .person-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin-inline: auto;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 992px) {
+  #Meet_the_team .img-container .person-wrapper {
+    max-width: 550px;
+    margin-inline: auto 0;
+  }
+  #Meet_the_team .flex-row .img-column-70 p.bold-text {
+    font-size: 0.6em;
+  }
+  #Meet_the_team .flex-row .img-column-70 div div p {
+    line-height: 1.4;
+    font-size: 0.75rem;
+  }
+
+  #Meet_the_team .flex-row .img-column-70 div div a {
+    text-align: right;
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  #Meet_the_team .img-container .person-wrapper {
+    max-width: 350px;
+  }
+  #Meet_the_team .flex-row .img-column-70 h6 {
+    font-size: 0.65em;
+  }
+  #Meet_the_team .flex-row .img-column-70 p.bold-text {
+    font-size: 0.5em;
+    font-weight: 600;
+  }
+  #Meet_the_team .flex-row .img-column-70 div div p {
+    line-height: 1.2;
+  }
+
+  #Meet_the_team .flex-row .img-column-70 div div a {
+    width: 100%;
+    padding-right: 1em;
+  }
+}
 
 /*****************OUR SERVICES *********************/
 #Our_Services .flex-wrap {
