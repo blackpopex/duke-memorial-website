@@ -203,7 +203,6 @@ a {
   }
   h6 {
     font-size: 1rem;
-    font-weight: 600;
   }
   p,
   .circular-dots,
@@ -3483,5 +3482,93 @@ footer .bottom-footer ul li a span {
   }
   #visitorsPolicy iconify-icon {
     font-size: 2em;
+  }
+}
+
+/*******************PATIENT STORIES*********************/
+#Patient_Stories .col-70 .col-50 .content {
+  width: 100%;
+  max-width: 380px;
+  margin-inline: auto;
+  display: block;
+  margin-bottom: 2em;
+  position: relative;
+}
+#Patient_Stories .col-70 .col-50 .content img {
+  width: 100%;
+}
+#Patient_Stories .col-70 .col-50 .content .absolute {
+  position: absolute;
+  bottom: 3.6em;
+  left: 0;
+  width: auto;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(0.0000125rem);
+  padding-inline: 3em;
+  padding-top: 0.5em;
+}
+#Patient_Stories .col-70 .col-50 .content .first-testifier {
+  bottom: 0;
+}
+#Patient_Stories .col-70 .col-50 .content .story-clip p {
+  padding: 1em 0;
+}
+@media (min-width: 768px) {
+  #Patient_Stories .col-70 .rest-of-testifiers {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #Patient_Stories .col-70 .col-50 .content {
+    max-width: 300px;
+    margin-inline: 0 auto;
+  }
+  #Patient_Stories .col-70 .rest-of-testifiers .col-50 .content {
+    width: 280px;
+  }
+  #Patient_Stories .col-70 .col-50 .content .absolute {
+    padding-inline: 2em;
+    padding-top: 0.3em;
+  }
+  #Patient_Stories .col-70 .rest-of-testifiers .col-50 .content .absolute {
+    bottom: 5.2em;
+  }
+  #Patient_Stories .col-70 .col-50 .content .absolute h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 992px) {
+  #Patient_Stories .col-70 .col-50 .content {
+    max-width: 300px;
+  }
+  #Patient_Stories .col-70 .first-tesifier-comment {
+    width: 48%;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1200px) {
+  #Patient_Stories .col-70 .col-50 .content {
+    max-width: 320px;
+  }
+  #Patient_Stories .col-70 .rest-of-testifiers .col-50 .content {
+    width: 300px;
+  }
+  #Patient_Stories .col-70 .first-tesifier-comment {
+    width: 50%;
+  }
+}
+@media (min-width: 1600px) {
+  #Patient_Stories .col-70 .col-50 .content {
+    max-width: 350px;
+  }
+  #Patient_Stories .col-70 .rest-of-testifiers .col-50 .content {
+    width: 350px;
+  }
+  #Patient_Stories .col-70 .col-50 .content .absolute {
+    padding-inline: 3em;
+    padding-top: 0.5em;
+  }
+  #Patient_Stories .col-70 .col-50 .content .absolute h6 {
+    font-size: 0.9rem;
   }
 }
