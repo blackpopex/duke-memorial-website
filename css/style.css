@@ -1726,7 +1726,9 @@ footer .bottom-footer ul li a span {
   footer .right-bottom-box-shadow {
     max-width: 420px;
     margin-right: auto;
+    margin-top: 0;
   }
+
   footer .right-bottom-box-shadow h5 {
     font-size: 0.7em;
   }
@@ -3005,6 +3007,9 @@ footer .bottom-footer ul li a span {
 #About_us .wrapper h6 {
   font-weight: 400;
 }
+#About_us .wrapper h3 {
+  margin-bottom: 0.2em;
+}
 
 #About_us .img-container h4:first-child {
   margin-bottom: 1em;
@@ -3364,7 +3369,39 @@ footer .bottom-footer ul li a span {
   }
 }
 
-/********MISSION, VISION AND VALUES PAGE ALREADY RESPONSIVE*********/
+/********KEY STATEMENT*********/
+
+#Meet_the_team .key-statement {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+#Meet_the_team .key-statement h4 {
+  max-width: 300px;
+  margin-inline: auto;
+}
+#Meet_the_team .key-statement img {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  #Meet_the_team .key-statement h4 {
+    max-width: 400px;
+  }
+}
+@media (min-width: 768px) {
+  #Meet_the_team .key-statement {
+    max-width: 700px;
+  }
+  #Meet_the_team .key-statement h4 {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #Meet_the_team .key-statement {
+    max-width: 750px;
+  }
+}
 /*******************FREQUENTLY ASKED QUESTION**********************/
 
 #fAQ .accordion-container {
@@ -3507,6 +3544,7 @@ footer .bottom-footer ul li a span {
   backdrop-filter: blur(0.0000125rem);
   padding-inline: 3em;
   padding-top: 0.5em;
+  border-right: 6px solid var(--green-color);
 }
 #Patient_Stories .col-70 .col-50 .content .first-testifier {
   bottom: 0;
