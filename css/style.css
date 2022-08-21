@@ -354,6 +354,10 @@ button {
 
 .flex-wrap,
 .flex-column {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -507,10 +511,18 @@ section h1 {
   top: 0;
   width: 100%;
   height: 8vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   z-index: 999;
 }
 .navbar-bottom .flex-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -528,6 +540,10 @@ section h1 {
   ); /*******change it back to green on 768px screen size********/
 }
 .navbar-bottom .column-80 nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -723,6 +739,10 @@ section h1 {
     padding: 0;
   }
   .navbar-top .container div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -791,9 +811,17 @@ section h1 {
     top: 0;
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
   }
   .navbar-bottom .flex-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1624,6 +1652,10 @@ footer .bottom-footer ul li a span {
 
 @media (min-width: 768px) {
   footer .specific-width .flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
   }
@@ -1813,6 +1845,10 @@ footer .bottom-footer ul li a span {
   bottom: 0;
 }
 .picture-content-wrapper .flex-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1991,6 +2027,10 @@ footer .bottom-footer ul li a span {
     text-align: center;
   }
   #adverts .max-width:last-child {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2402,6 +2442,10 @@ footer .bottom-footer ul li a span {
   margin-top: 0.25em;
 }
 #patientTestimonies .relative-container-right .flex-row .flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -2475,6 +2519,10 @@ footer .bottom-footer ul li a span {
     top: 50%;
   }
   #patientTestimonies .relative-container-right .flex-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2632,6 +2680,10 @@ footer .bottom-footer ul li a span {
 }
 .col-30 aside ul li a {
   color: var(--primary-color);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
 }
@@ -2882,6 +2934,10 @@ footer .bottom-footer ul li a span {
   }
   .form form .input-wrapper {
     margin-bottom: 0.5em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2940,6 +2996,10 @@ footer .bottom-footer ul li a span {
   margin-bottom: 1em;
 }
 #Book_Appointment .column-48 .flex-row .full-width {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -3121,6 +3181,10 @@ footer .bottom-footer ul li a span {
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
 }
 #Meet_the_team .img-container .person-wrapper .flex-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -3194,6 +3258,10 @@ footer .bottom-footer ul li a span {
 
 @media (min-width: 1200px) {
   #Meet_the_team .img-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -3263,6 +3331,10 @@ footer .bottom-footer ul li a span {
 
 /*****************OUR SERVICES *********************/
 #Our_Services .flex-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -3326,6 +3398,10 @@ footer .bottom-footer ul li a span {
 @media (min-width: 768px) {
   #Why-Choose-Us .column-right .align-start {
     width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
   }
   #Why-Choose-Us .column-40 {
@@ -3478,6 +3554,10 @@ footer .bottom-footer ul li a span {
 
 @media (min-width: 600px) {
   #visitorsPolicy .wrapper div:not(:first-child) .flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
   }
