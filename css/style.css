@@ -2631,11 +2631,163 @@ footer .bottom-footer ul li a span {
 }
 
 @media (min-width: 768px) {
+  .section-bg-image h1 {
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+  }
+  .section-bg-image p {
+    width: 100%;
+    max-width: 325px;
+    line-height: 1.2;
+  }
   .section-bg-image {
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    min-height: 180px;
+    padding: 1em 0;
+    margin-top: 5em;
+  }
+
+  /********Background image (header section) for 768px to 992px *******/
+  .photo1 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo1.jpg);
+  }
+  .photo2 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo2.jpg);
+  }
+  .photo3 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo3.jpg);
+  }
+  .photo4 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo4.jpg);
+  }
+  .photo5 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo5.jpg);
+  }
+  .photo6 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo6.jpg);
+  }
+  .photo7 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo7.jpg);
+  }
+  .photo8 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo8.jpg);
+  }
+  .photo9 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo9.jpg);
+  }
+  .photo10 {
+    background-image: url(../assets/bg-image/section-bg-image/768px-992px/photo10.jpg);
+  }
+}
+@media (min-width: 992px) {
+  .section-bg-image {
+    min-height: 200px;
+    padding: 1.2em 0;
+  }
+  .section-bg-image h1 {
+    font-size: 1.7em;
+    margin-top: 1.2em;
+  }
+  .section-bg-image p {
+    max-width: 360px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-bg-image {
+    min-height: 250px;
+    padding: 1.5em 0;
+  }
+  .section-bg-image h1 {
+    font-size: 1.8em;
+    margin-top: 1em;
+  }
+  .section-bg-image p {
+    max-width: 380px;
+  }
+
+  /********Background image (header section) for 1200px *******/
+  .photo1 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo1.jpg);
+  }
+  .photo2 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo2.jpg);
+  }
+  .photo3 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo3.jpg);
+  }
+  .photo4 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo4.jpg);
+  }
+  .photo5 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo5.jpg);
+  }
+  .photo6 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo6.jpg);
+  }
+  .photo7 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo7.jpg);
+  }
+  .photo8 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo8.jpg);
+  }
+  .photo9 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo9.jpg);
+  }
+  .photo10 {
+    background-image: url(../assets/bg-image/section-bg-image/1200px/photo10.jpg);
+  }
+}
+
+@media (min-width: 1400px) {
+  .section-bg-image {
+    min-height: 280px;
+    padding: 2em 0;
+  }
+  .section-bg-image h1 {
+    font-size: 2em;
+  }
+  .section-bg-image p {
+    max-width: 450px;
+  }
+@media (min-width: 1600px) {
+  .section-bg-image {
     background-size: contain;
-    min-height: 300px;
+  }
+  
+
+  /********Background image (header section) for 1200px *******/
+  .photo1 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo1.jpg);
+  }
+  .photo2 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo2.jpg);
+  }
+  .photo3 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo3.jpg);
+  }
+  .photo4 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo4.jpg);
+  }
+  .photo5 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo5.jpg);
+  }
+  .photo6 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo6.jpg);
+  }
+  .photo7 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo7.jpg);
+  }
+  .photo8 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo8.jpg);
+  }
+  .photo9 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo9.jpg);
+  }
+  .photo10 {
+    background-image: url(../assets/bg-image/section-bg-image/1920px/photo10.jpg);
   }
 }
 
