@@ -2743,6 +2743,7 @@ footer .bottom-footer ul li a span {
 
 @media (min-width: 1400px) {
   .section-bg-image {
+    background-size: contain;
     min-height: 280px;
     padding: 2em 0;
   }
@@ -2752,11 +2753,11 @@ footer .bottom-footer ul li a span {
   .section-bg-image p {
     max-width: 450px;
   }
-@media (min-width: 1600px) {
-  .section-bg-image {
-    background-size: contain;
+  @media (min-width: 1600px) {
+    .section-bg-image {
+      background-size: contain;
+    }
   }
-  
 
   /********Background image (header section) for 1200px *******/
   .photo1 {
