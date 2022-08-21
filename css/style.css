@@ -2759,7 +2759,7 @@ footer .bottom-footer ul li a span {
     }
   }
 
-  /********Background image (header section) for 1200px *******/
+  /********Background image (header section) for 1600px & above *******/
   .photo1 {
     background-image: url(../assets/bg-image/section-bg-image/1920px/photo1.jpg);
   }
