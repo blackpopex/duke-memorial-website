@@ -875,7 +875,7 @@ section h1 {
     overflow-x: hidden;
     opacity: 1;
     width: auto;
-    background-color: #222222;
+    background-color: inherit;
   }
 
   #menu_bar li,
@@ -909,6 +909,7 @@ section h1 {
     font-size: 0.675rem;
     font-weight: 500;
   }
+  /*** #menu_bar #dropDown**/
 
   #menu_bar #dropDown .dropdown-content {
     max-height: 400px;
@@ -916,20 +917,35 @@ section h1 {
     overflow: hidden;
     padding-left: 0;
     position: absolute;
-    z-index: 999;
-    bottom: -200px;
-    z-index: 9999;
-    left: 0;
-    display: none;
+    top: 130%;
+    z-index: 9;
+    left: 80px;
+    width: auto;
+    padding: 0.5em 1.5em 1.5em;
+    background-color: rgba(220, 227, 233, 0.96);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.25s ease-in;
   }
 
   #menu_bar .dropdown .dropdown-content ul li {
     display: block;
     width: 100%;
+    line-height: 1.2;
+    padding: 0.3em 0;
   }
   #menu_bar .dropdown .dropdown-content ul li a {
     padding-left: 0;
     color: var(--primary-color);
+  }
+  #menu_bar #dropDown .dropdown-content .patient-care .column-50 {
+    width: 100%;
+    margin-right: 1em;
+    padding: 0.5em;
+  }
+  #menu_bar #dropDown .dropdown-content .visitors ul {
+    padding: 0.5em;
   }
 
   .dropdown-btn:after {
@@ -943,8 +959,10 @@ section h1 {
     content: "\2012";
   }
 
-  #menu_bar #dropDown:hover #drop_Content {
-    display: block;
+  #menu_bar #dropDown:hover .dropdown-content {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 9999;
   }
 
   /*
@@ -982,6 +1000,78 @@ section h1 {
   #menu_bar .listed a {
     font-size: 0.75rem;
   }
+  #menu_bar #dropDown .dropdown-content {
+    left: 0;
+    width: 100%;
+    max-width: 700px;
+    padding: 2em 1em;
+  }
+  #menu_bar #dropDown .dropdown-content h3 {
+    font-size: 1.5em;
+  }
+  #menu_bar #dropDown .dropdown-content .scale-100 {
+    width: 100%;
+  }
+  #menu_bar #dropDown .dropdown-content .col-30 {
+    width: 30%;
+    display: block;
+  }
+
+  #menu_bar #dropDown .dropdown-content .col-30 img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #menu_bar #dropDown .dropdown-content .col-30 .about-us img {
+    width: 100%;
+    max-width: 400px;
+  }
+  #menu_bar #dropDown .dropdown-content .col-70 {
+    width: 70%;
+    max-width: 600px;
+    margin-left: 2em;
+  }
+  #menu_bar #dropDown .dropdown-content .patient-care .col-75 {
+    width: 75%;
+    margin-left: auto;
+  }
+  #menu_bar #dropDown .dropdown-content .patient-care h5 {
+    width: 75%;
+    margin-left: auto;
+  }
+  #menu_bar #dropDown .dropdown-content .patient-care .column-50 {
+    margin-right: 0;
+    padding: 0;
+  }
+  #menu_bar #dropDown .dropdown-content .patient-care .col-70 .column-50 {
+    width: 50%;
+    margin-right: 0;
+    padding: 0;
+  }
+  #menu_bar #dropDown .dropdown-content .visitors ul {
+    padding: 0;
+  }
+  #menu_bar
+    #dropDown
+    .dropdown-content
+    .patient-care
+    .col-75
+    .column-50:not(:last-child) {
+    margin-right: 1em;
+  }
+  #menu_bar #dropDown .dropdown-content .col-70 .col-33 {
+    width: 33%;
+  }
+
+  #menu_bar #dropDown .dropdown-content .image-container {
+    display: block;
+    width: 30%;
+    max-width: 300px;
+  }
+
+  #menu_bar #dropDown .dropdown-content h5 {
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1001,6 +1091,33 @@ section h1 {
   #menu_bar .listed a {
     font-size: 0.8rem;
   }
+  #menu_bar #dropDown .dropdown-content {
+    max-width: 800px;
+    padding: 3em 2em;
+    top: 135%;
+  }
+  #menu_bar #dropDown .dropdown-content h3 {
+    font-size: 1.7em;
+  }
+  #menu_bar #dropDown .dropdown-content .image-container {
+    max-width: 400px;
+  }
+  #menu_bar #dropDown .dropdown-content .image-container img {
+    width: 100%;
+    max-width: 500px;
+  }
+  #menu_bar #dropDown .dropdown-content h5 {
+    margin-bottom: 0.7em;
+  }
+  #menu_bar
+    #dropDown
+    .dropdown-content
+    .patient-care
+    .col-75
+    .column-50:not(:last-child) {
+    margin-right: 1.5em;
+    margin-left: 0;
+  }
 }
 @media (min-width: 1400px) {
   .navbar-bottom .column-20 {
@@ -1015,6 +1132,17 @@ section h1 {
     font-size: 0.85rem;
     margin-right: 0.8em;
   }
+  #menu_bar #dropDown .dropdown-content {
+    padding: 4em 3em;
+    top: 140%;
+    left: 25%;
+  }
+  #menu_bar #dropDown .dropdown-content .image-container {
+    max-width: 500px;
+  }
+  #menu_bar #dropDown .dropdown-content .image-container img {
+    max-width: 600px;
+  }
 }
 @media (min-width: 1600px) {
   .navbar-bottom .column-20 {
@@ -1023,6 +1151,20 @@ section h1 {
   }
   .navbar-bottom .column-80 {
     padding: 1em 0;
+  }
+  #menu_bar #dropDown .dropdown-content {
+    padding: 4em 2em;
+    max-width: 800px;
+    top: 150%;
+    left: 35%;
+  }
+  #menu_bar
+    #dropDown
+    .dropdown-content
+    .patient-care
+    .col-75
+    .column-50:not(:last-child) {
+    margin-right: 1.8em;
   }
 }
 
