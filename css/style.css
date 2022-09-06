@@ -1191,7 +1191,7 @@ section h1 {
 
 /*****SEACH CONTAINER******/
 .sectionbar {
-  position: absolute;
+  position: fixed;
   top: 8vh;
   width: 100%;
   padding: 0.15em 0;
@@ -1228,6 +1228,7 @@ section h1 {
 
 @media (min-width: 768px) {
   .sectionbar {
+    position: absolute;
     top: 11vh;
     padding: 0.25em 0;
   }
