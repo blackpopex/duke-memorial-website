@@ -2297,6 +2297,7 @@ footer .bottom-footer ul li a span {
 #clinicDays {
   padding: 0;
   position: relative;
+  display: none;
 }
 
 @media (min-width: 768px) {
