@@ -369,10 +369,21 @@
       <section id="hero_image">
         <div class="faded-overlay"></div>
         <img
-          src="assets/hero-image/dukes-hero-image.jpg"
+          src="assets/hero-image/mobile.jpg"
           alt="duke hospital hero image"
+          id="heroImage"
         />
       </section>
+
+      <script>
+        if (window.matchMedia("(max-width: 600px)").matches) {
+          document.getElementById("heroImage").src =
+            "assets/hero-image/mobile.jpg";
+        } else {
+          document.getElementById("heroImage").src =
+            "assets/hero-image/duke-hero-bg-image.jpg";
+        }
+      </script>
     </div>
 
     <!--------------------------------MAIN SECTION STARTS -------------------------------------->
