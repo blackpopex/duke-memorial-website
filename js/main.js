@@ -37,16 +37,7 @@ for (let i = 0; i < iwantToButton.length; i++) {
   });
 }
 
-// CHANGE HERO IMAGE WHEN SCREEN SIZE CHANGES
-if (window.matchMedia("(max-width: 600px)").matches) {
-  document.getElementById("heroImage").src = "assets/hero-image/mobile.jpg";
-} else {
-  document.getElementById("heroImage").src =
-    "assets/hero-image/duke-hero-bg-image.jpg";
-}
-
 //TOGGLE OPEN AND CLOSING OF SIDEBAR ON MOBILE
-
 var openSidebar = document.querySelector("#navToggle");
 var closeBtn = document.querySelector("#closeSidebar");
 var mobileMenu = document.querySelector("#menu_bar");
@@ -113,3 +104,11 @@ function topFunction() {
 //AOS INERTIALIZATION
 
 AOS.init();
+
+// CHANGE HERO IMAGE WHEN SCREEN SIZE CHANGES
+if (window.matchMedia("(max-width: 600px)").matches) {
+  document.getElementById("heroImage").src = "assets/hero-image/mobile.jpg";
+} else {
+  document.getElementById("heroImage").src =
+    "assets/hero-image/duke-hero-bg-image.jpg";
+}
