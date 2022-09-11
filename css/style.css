@@ -1227,9 +1227,9 @@ section h1 {
 }
 #hero_image .hero-text-wrapper a {
   font-size: 0.35em;
-  background-color: var(--next-primary-color);
+  background-color: var(--primary-color);
   padding: 0.75em 0.8em;
-  color: var(--primary-color);
+  color: var(--white-color);
   font-family: var(--poppins-fontFamily-mainHeading);
   font-weight: 500;
 }
@@ -1304,9 +1304,10 @@ section h1 {
   }
 
   #hero_image .hero-text-wrapper a {
-    font-size: 0.5em;
+    font-size: 0.65em;
     font-weight: 500;
-    padding-inline: 1.5em;
+    font-family: var(--slabo-fontFamily-links-buttons-paragraph);
+    padding: 0.5em;
   }
 }
 
