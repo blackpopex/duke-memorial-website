@@ -36,8 +36,19 @@ if (window.matchMedia("(max-width: 600px)").matches) {
 }
 
 //TOGGLE OPEN AND CLOSING OF SIDEBAR ON MOBILE
-var iwantToButton = document.querySelector("#iWantToBTN");
-var iWantToDropdown = document.querySelector("#iWantToDropdown");
+const topNavbarDropdownBTN = document.querySelectorAll(
+  ".topNavbarDropDownButton"
+);
+const iWantToDropdownMenu = topNavbarDropdownBTN.nextElementSibling;
+
+for (m = 0; m < topNavbarDropdownBTN.length; i++) {
+  topNavbarDropdownBTN[
+    i
+  ].topNavbarDropdownBTN.nextElementSibling.classList.toggle(
+    "dropdown_content_activated"
+  );
+}
+
 var openSidebar = document.querySelector("#navToggle");
 var closeBtn = document.querySelector("#closeSidebar");
 var mobileMenu = document.querySelector("#menu_bar");
@@ -45,9 +56,6 @@ var getOurApp = document.querySelector("#getApp");
 var searchBTN = document.querySelector("#SearchBTN");
 var sectionContainer = document.querySelector("#sectionContainer");
 
-iwantToButton.addEventListener("click", function () {
-  iWantToDropdown.classList.toggle("dropdown_content_activated");
-});
 openSidebar.addEventListener("click", function () {
   mobileMenu.style.width = "100%";
   getOurApp.classList.add("opacity_visible");

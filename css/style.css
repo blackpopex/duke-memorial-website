@@ -812,7 +812,7 @@ section h1 {
     color: var(--primary-color);
     font-weight: 280;
   }
-  .navbar-top .inline-block .dropdown_content_activated {
+  .topnavbar .dropdown_content_activated {
     height: 350px;
     opacity: 1;
     visibility: visible;
