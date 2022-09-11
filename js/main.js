@@ -15,6 +15,18 @@ for (i = 0; i < accordion.length; i++) {
   });
 }
 
+//loop through all dropdown wrapper
+
+const dropdownButtons = document.querySelectorAll(".js_dropdown");
+const myDropdownWrapper = document.querySelectorAll(".dropdown-content");
+for (let i = 0; i < dropdownButtons.length; i++) {
+  dropdownButtons[i].addEventListener("click", function () {
+    dropdownButtons[i].nextElementSibling.classList.toggle(
+      "dropdown-content-activated"
+    );
+  });
+}
+
 // CHANGE HERO IMAGE WHEN SCREEN SIZE CHANGES
 if (window.matchMedia("(max-width: 600px)").matches) {
   document.getElementById("heroImage").src = "assets/hero-image/mobile.jpg";
