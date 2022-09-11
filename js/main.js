@@ -27,6 +27,16 @@ for (let i = 0; i < dropdownButtons.length; i++) {
   });
 }
 
+const iwantToButton = document.querySelectorAll(".iwantToButton");
+const iwantToDropdownMenu = document.querySelectorAll(".iwantToDropdownMenu");
+for (let i = 0; i < iwantToButton.length; i++) {
+  iwantToButton[i].addEventListener("click", function () {
+    iwantToButton[i].nextElementSibling.classList.toggle(
+      "dropdown_content_activated"
+    );
+  });
+}
+
 // CHANGE HERO IMAGE WHEN SCREEN SIZE CHANGES
 if (window.matchMedia("(max-width: 600px)").matches) {
   document.getElementById("heroImage").src = "assets/hero-image/mobile.jpg";
@@ -36,18 +46,6 @@ if (window.matchMedia("(max-width: 600px)").matches) {
 }
 
 //TOGGLE OPEN AND CLOSING OF SIDEBAR ON MOBILE
-const topNavbarDropdownBTN = document.querySelectorAll(
-  ".topNavbarDropDownButton"
-);
-const iWantToDropdownMenu = topNavbarDropdownBTN.nextElementSibling;
-
-for (m = 0; m < topNavbarDropdownBTN.length; i++) {
-  topNavbarDropdownBTN[
-    i
-  ].topNavbarDropdownBTN.nextElementSibling.classList.toggle(
-    "dropdown_content_activated"
-  );
-}
 
 var openSidebar = document.querySelector("#navToggle");
 var closeBtn = document.querySelector("#closeSidebar");
