@@ -15,6 +15,14 @@ for (i = 0; i < accordion.length; i++) {
   });
 }
 
+// CHANGE HERO IMAGE WHEN SCREEN SIZE CHANGES
+if (window.matchMedia("(max-width: 600px)").matches) {
+  document.getElementById("heroImage").src = "assets/hero-image/mobile.jpg";
+} else {
+  document.getElementById("heroImage").src =
+    "assets/hero-image/duke-hero-bg-image.jpg";
+}
+
 //TOGGLE OPEN AND CLOSING OF SIDEBAR ON MOBILE
 var iwantToButton = document.querySelector("#iWantToBTN");
 var iWantToDropdown = document.querySelector("#iWantToDropdown");
