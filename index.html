@@ -304,8 +304,39 @@
         <div id="sectionContainer" class="sectionbar bg-primary-color">
           <div class="container">
             <form action="action_page.php" method="post">
-              <input type="text" placeholder="I'm Looking for..." />
+              <input
+                type="text"
+                placeholder="I'm Looking for..."
+                onkeyup="showSearchBox(this.value)"
+              />
+
+              <div class="searchResultWrapper" id="searchWrapper">
+                <div id="showSearchResult">
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                  <p>Hello</p>
+                </div>
+              </div>
             </form>
+            <script>
+              function showSearchBox(str) {
+                if (str.length > 0) {
+                  document
+                    .getElementById("searchWrapper")
+                    .classList.add("show-searchResultWrapper");
+                  return;
+                } else {
+                  document
+                    .getElementById("searchWrapper")
+                    .classList.remove("show-searchResultWrapper");
+                }
+              }
+            </script>
           </div>
         </div>
       </header>
