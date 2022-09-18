@@ -502,12 +502,12 @@
                     <h5 class="text-primary">Visitors</h5>
                     <ul class="margin-bottom">
                       <li>
-                        <a href="../../visitors/visitors-policy.html"
+                        <a href="../../visitors/visitors-policy.php"
                           >Visitor Policy</a
                         >
                       </li>
                       <li>
-                        <a href="../../visitors/visitors-information.html"
+                        <a href="../../visitors/visitors-information.php"
                           >Visitor Information</a
                         >
                       </li>
@@ -518,7 +518,7 @@
                     <ul>
                       <li class="box pay-a-bill bg-white">
                         <a
-                          href="../patient-and-visitors/patient-care/pay-a-bill.html"
+                          href="../pay-a-bill.php"
                         >
                           <iconify-icon icon="logos:mastercard"></iconify-icon>
                           Pay a Bill</a
@@ -526,7 +526,7 @@
                       </li>
                       <li class="box request-appointment bg-white">
                         <a
-                          href="../patient-and-visitors/patient-care/book-appointment.html"
+                          href="../book-appointment.php"
                         >
                           <iconify-icon
                             icon="icon-park-solid:appointment"
@@ -536,7 +536,7 @@
                       </li>
                       <li class="box faq bg-white">
                         <a
-                          href="../patient-and-visitors/patient-care/frequently-asked-question.html"
+                          href="../frequently-asked-question.php"
                         >
                           <iconify-icon icon="wpf:faq"></iconify-icon>
                           Frequently Asked Question</a

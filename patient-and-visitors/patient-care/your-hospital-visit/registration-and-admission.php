@@ -476,30 +476,30 @@
                     <h5 class="text-primary">Patient Care</h5>
                     <ul class="margin-bottom">
                       <li>
-                        <a href="../../../book-appointment.php"
+                        <a href="../book-appointment.php"
                           >Book Appointment</a
                         >
                       </li>
                       <li>
-                        <a href="../../../your-hospital-visit.php"
+                        <a href="../your-hospital-visit.php"
                           >Your Hospital Visit</a
                         >
                       </li>
                       <li>
                         <a
-                          href="../../../what-to-expect.php"
+                          href="../what-to-expect.php"
                           class="text-active"
                           >What to Expect</a
                         >
                       </li>
-                      <li><a href="../../../pay-a-bill.php">Pay a Bill</a></li>
+                      <li><a href="../pay-a-bill.php">Pay a Bill</a></li>
                       <li>
-                        <a href="../../../patient-stories.php"
+                        <a href="../patient-stories.php"
                           >Patient Stories</a
                         >
                       </li>
                       <li>
-                        <a href="../../../frequently-asked-question.php"
+                        <a href="../frequently-asked-question.php"
                           >Frequently Asked Question</a
                         >
                       </li>
@@ -508,12 +508,12 @@
                     <h5 class="text-primary">Visitors</h5>
                     <ul class="margin-bottom">
                       <li>
-                        <a href="../../../visitors/visitors-policy.php"
+                        <a href="../../visitors/visitors-policy.php"
                           >Visitor Policy</a
                         >
                       </li>
                       <li>
-                        <a href="../../../visitors/visitors-information.php"
+                        <a href="../../visitors/visitors-information.php"
                           >Visitor Information</a
                         >
                       </li>
@@ -524,7 +524,7 @@
                     <ul>
                       <li class="box pay-a-bill bg-white">
                         <a
-                          href="../../../patient-and-visitors/patient-care/pay-a-bill.php"
+                          href="../pay-a-bill.php"
                         >
                           <iconify-icon icon="logos:mastercard"></iconify-icon>
                           Pay a Bill</a
@@ -532,7 +532,7 @@
                       </li>
                       <li class="box request-appointment bg-white">
                         <a
-                          href="../../../patient-and-visitors/patient-care/book-appointment.php"
+                          href="../book-appointment.php"
                         >
                           <iconify-icon
                             icon="icon-park-solid:appointment"
@@ -542,7 +542,7 @@
                       </li>
                       <li class="box faq bg-white">
                         <a
-                          href="../../../patient-and-visitors/patient-care/frequently-asked-question.php"
+                          href="../frequently-asked-question.php"
                         >
                           <iconify-icon icon="wpf:faq"></iconify-icon>
                           Frequently Asked Question</a
