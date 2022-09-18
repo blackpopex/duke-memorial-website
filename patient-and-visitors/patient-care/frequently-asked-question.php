@@ -170,7 +170,7 @@
                   <div class="sidebar-with-logo hide-lg-screen">
                     <a href="../../index.php" class="mobile-navbar-logo">
                       <img
-                        src="assets/logo/duke-logo-white.png"
+                        src="../../assets/logo/duke-logo-white.png"
                         alt="duke logo"
                       />
                     </a>
