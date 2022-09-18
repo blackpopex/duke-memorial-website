@@ -936,13 +936,14 @@ section h1 {
     transform: translateY(50px);
     opacity: 0;
     transition: transform 0.5s ease-in-out, opacity 0.25s ease-in;
-    visibility: visible;
+    visibility: hidden;
   }
 
   .navbar-bottom .dropdown-content-activated {
     transform: translateY(0);
     opacity: 1;
     z-index: 9999;
+    visibility: visible;
   }
 
   #menu_bar .dropdown .dropdown-content ul li {
@@ -1386,7 +1387,7 @@ section h1 {
 /****chnage back*****/
 .searchResultWrapper {
   background-color: rgb(33, 78, 113);
-  background-color: rgba(33, 78, 113, 0.85);
+  background-color: rgba(33, 78, 113, 0.9);
   height: 125px;
   overflow-y: auto;
   width: 100%;
@@ -1395,7 +1396,7 @@ section h1 {
   z-index: 9999;
   border-radius: 0 0 5px 5px;
   transform: translateY(30px);
-  transition: transform 0.5s ease;
+  transition: transform 1s ease;
   color: var(--white-color);
   padding: 0.5em;
   opacity: 0;
@@ -1406,6 +1407,12 @@ section h1 {
 .show-searchResultWrapper {
   transform: translateY(0);
   opacity: 1;
+}
+.show-searchResultWrapper a,
+.show-searchResultWrapper h4 {
+  color: var(--white-color);
+  opacity: 0.7;
+  font-family: var(--slabo-fontFamily-links-buttons-paragraph);
 }
 
 .showSearch {
