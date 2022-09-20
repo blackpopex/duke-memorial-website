@@ -96,7 +96,7 @@
                       >
                     </li>
                     <li>
-                      <a href="../refer-a-patient.html">Refer a Patient</a>
+                      <a href="../refer-a-patient.php">Refer a Patient</a>
                     </li>
                     <li>
                       <a
@@ -796,7 +796,7 @@
                   </ul>
                   <ul>
                     <li>
-                      <a href="../refer-a-patient.html">Refer a Patient</a>
+                      <a href="../refer-a-patient.php">Refer a Patient</a>
                     </li>
                     <li>
                       <a
@@ -865,7 +865,7 @@
                   <li><a href="#/">Terms of Use</a></li>
                   <li><a href="#/">Sitemap</a></li>
                   <li>
-                    <a href="#/"
+                    <a href="https://www.blackpopex.com" target="_blank"
                       >Designed & Built by
                       <span class="text-green">Blackpopex</span></a
                     >

@@ -503,7 +503,7 @@
                   </div>
                   <div>
                     <a
-                      href="map-and-direction.html"
+                      href="map-and-direction.php"
                       class="bg-next-primary-color"
                     >
                       <span class="text-primary">MAP & DIRECTION</span>
@@ -786,7 +786,7 @@
               <div class="col-30">
                 <h5 class="text-white">About Duke</h5>
                 <ul>
-                  <li><a href="about-us/history.html">History</a></li>
+                  <li><a href="about-us/history.php">History</a></li>
                   <li>
                     <a href="about-us/mission-vision-values.php"
                       >Mission, Vision, Values</a
@@ -891,7 +891,7 @@
                   <li><a href="#/">Terms of Use</a></li>
                   <li><a href="#/">Sitemap</a></li>
                   <li>
-                    <a href="#/"
+                     <a href="https://www.blackpopex.com" target="_blank"
                       >Designed & Built by
                       <span class="text-green">Blackpopex</span></a
                     >

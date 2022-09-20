@@ -95,7 +95,7 @@
                       >
                     </li>
                     <li>
-                      <a href="../refer-a-patient.html">Refer a Patient</a>
+                      <a href="../refer-a-patient.php">Refer a Patient</a>
                     </li>
                     <li>
                       <a
@@ -144,7 +144,7 @@
               class="column-20 bg-white container-left-ten%"
               id="whiteBackground"
             >
-              <a href="../index.html" id="header_logo">
+              <a href="../index.php" id="header_logo">
                 <img src="../assets/logo/blue-logo-duke.jpg" alt="duke logo" />
               </a>
             </div>
@@ -166,7 +166,7 @@
 
                 <ul id="menu_bar" class="menuBar">
                   <div class="sidebar-with-logo hide-lg-screen">
-                    <a href="../index.html" class="mobile-navbar-logo">
+                    <a href="../index.php" class="mobile-navbar-logo">
                       <img
                         src="../assets/logo/duke-logo-white.png"
                         alt="duke logo"
@@ -701,7 +701,7 @@
                   </ul>
                   <ul>
                     <li>
-                      <a href="../refer-a-patient.html">Refer a Patient</a>
+                      <a href="../refer-a-patient.php">Refer a Patient</a>
                     </li>
                     <li>
                       <a
@@ -770,7 +770,7 @@
                   <li><a href="#/">Terms of Use</a></li>
                   <li><a href="#/">Sitemap</a></li>
                   <li>
-                    <a href="#/"
+                      <a href="https://www.blackpopex.com" target="_blank"
                       >Designed & Built by
                       <span class="text-green">Blackpopex</span></a
                     >
