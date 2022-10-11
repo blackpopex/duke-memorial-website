@@ -1432,6 +1432,15 @@ section h1 {
     top: 11vh;
     padding: 0.25em 0;
   }
+  .sectionbar {
+    position: absolute;
+    top: 0;
+    padding: 0.25em 0;
+    transform: translateY(100%);
+  }
+  .showSearch {
+    transform: translateY(200%);
+  }
   .sectionbar form {
     max-width: 500px;
     margin-inline: auto 0;
@@ -1441,14 +1450,13 @@ section h1 {
   }
 }
 
-@media (min-width: 992px) {
-  .sectionbar {
-    padding: 0.5em 0;
-  }
-}
 @media (min-width: 1200px) {
   .sectionbar {
-    top: 11vh;
+    transform: translateY(60%);
+    padding: 0.5em 0;
+  }
+  .showSearch {
+    transform: translateY(160%);
   }
   .sectionbar form {
     max-width: 550px;
@@ -1461,8 +1469,8 @@ section h1 {
   }
 }
 @media (min-width: 1400px) {
-  .sectionbar {
-    top: 13%;
+  .showSearch {
+    transform: translateY(175%);
   }
   .sectionbar form {
     max-width: 700px;
@@ -1474,6 +1482,13 @@ section h1 {
     height: 200px;
   }
 }
+@media (min-width: 1600px) {
+  .showSearch {
+    transform: translateY(190%);
+  }
+}
+
+
 /*****CONTACT US******/
 
 .contact_us {
@@ -1666,7 +1681,7 @@ section h1 {
   }
 
   .toggle-width {
-    width: 70%;
+    width: 60%;
   }
   .contact_us .content {
     margin-top: 1em;
@@ -1720,7 +1735,7 @@ section h1 {
   }
 
   .toggle-width {
-    width: 60%;
+    width: 55%;
   }
 
   .contact_us .content {
@@ -1769,7 +1784,7 @@ section h1 {
 
 @media (min-width: 1200px) {
   .toggle-width {
-    width: 50%;
+    width: 42%;
   }
   .contact_us h3 {
     font-size: 1.8em;
