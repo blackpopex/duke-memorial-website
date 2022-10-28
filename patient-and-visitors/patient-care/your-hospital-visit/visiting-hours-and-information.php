@@ -786,7 +786,11 @@
                   <li><a href="#/">Terms of Use</a></li>
                   <li><a href="#/">Sitemap</a></li>
                   <li>
+<<<<<<< HEAD
                      <a href="www.blackpopex.com" target="_blank"
+=======
+                     <a href="http://www.blackpopex.com/" target="_blank"
+>>>>>>> d49acec6305e5b0558d62f12065fe99ef058a1d0
                       >Designed & Built by
                       <span class="text-green">Blackpopex</span></a
                     >
