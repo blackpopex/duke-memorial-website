@@ -936,13 +936,14 @@ section h1 {
     transform: translateY(50px);
     opacity: 0;
     transition: transform 0.5s ease-in-out, opacity 0.25s ease-in;
-    visibility: visible;
+    visibility: hidden;
   }
 
   .navbar-bottom .dropdown-content-activated {
     transform: translateY(0);
     opacity: 1;
     z-index: 9999;
+    visibility: visible;
   }
 
   #menu_bar .dropdown .dropdown-content ul li {
@@ -1386,7 +1387,7 @@ section h1 {
 /****chnage back*****/
 .searchResultWrapper {
   background-color: rgb(33, 78, 113);
-  background-color: rgba(33, 78, 113, 0.85);
+  background-color: rgba(33, 78, 113, 0.9);
   height: 125px;
   overflow-y: auto;
   width: 100%;
@@ -1395,7 +1396,7 @@ section h1 {
   z-index: 9999;
   border-radius: 0 0 5px 5px;
   transform: translateY(30px);
-  transition: transform 0.5s ease;
+  transition: transform 1s ease;
   color: var(--white-color);
   padding: 0.5em;
   opacity: 0;
@@ -1406,6 +1407,12 @@ section h1 {
 .show-searchResultWrapper {
   transform: translateY(0);
   opacity: 1;
+}
+.show-searchResultWrapper a,
+.show-searchResultWrapper h4 {
+  color: var(--white-color);
+  opacity: 0.7;
+  font-family: var(--slabo-fontFamily-links-buttons-paragraph);
 }
 
 .showSearch {
@@ -1425,6 +1432,15 @@ section h1 {
     top: 11vh;
     padding: 0.25em 0;
   }
+  .sectionbar {
+    position: absolute;
+    top: 0;
+    padding: 0.25em 0;
+    transform: translateY(100%);
+  }
+  .showSearch {
+    transform: translateY(200%);
+  }
   .sectionbar form {
     max-width: 500px;
     margin-inline: auto 0;
@@ -1434,14 +1450,13 @@ section h1 {
   }
 }
 
-@media (min-width: 992px) {
-  .sectionbar {
-    padding: 0.5em 0;
-  }
-}
 @media (min-width: 1200px) {
   .sectionbar {
-    top: 11vh;
+    transform: translateY(60%);
+    padding: 0.5em 0;
+  }
+  .showSearch {
+    transform: translateY(160%);
   }
   .sectionbar form {
     max-width: 550px;
@@ -1454,8 +1469,8 @@ section h1 {
   }
 }
 @media (min-width: 1400px) {
-  .sectionbar {
-    top: 13%;
+  .showSearch {
+    transform: translateY(175%);
   }
   .sectionbar form {
     max-width: 700px;
@@ -1467,6 +1482,13 @@ section h1 {
     height: 200px;
   }
 }
+@media (min-width: 1600px) {
+  .showSearch {
+    transform: translateY(190%);
+  }
+}
+
+
 /*****CONTACT US******/
 
 .contact_us {
@@ -1659,7 +1681,7 @@ section h1 {
   }
 
   .toggle-width {
-    width: 70%;
+    width: 60%;
   }
   .contact_us .content {
     margin-top: 1em;
@@ -1713,7 +1735,7 @@ section h1 {
   }
 
   .toggle-width {
-    width: 60%;
+    width: 55%;
   }
 
   .contact_us .content {
@@ -1762,7 +1784,7 @@ section h1 {
 
 @media (min-width: 1200px) {
   .toggle-width {
-    width: 50%;
+    width: 42%;
   }
   .contact_us h3 {
     font-size: 1.8em;

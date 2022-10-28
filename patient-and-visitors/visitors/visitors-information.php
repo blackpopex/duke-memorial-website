@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Duke Memorial | Patient Stories</title>
+    <title>Duke Memorial | Visitors Information</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="js/multi-animated-counter.js"></script>
     <script src="https://kit.fontawesome.com/12d9de5a0c.js"></script>
@@ -25,6 +26,45 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    
+    <script>
+      //Search Container
+      //Clear Input filed when close BTN is clicked
+      $(document).ready(function () {
+        $("#SearchBTN").click(function () {
+          $("#searchQuery").val("");
+          $("#searchWrapper").removeClass("show-searchResultWrapper");
+        });
+      });
+
+      searchBTN.addEventListener("click", function () {
+        inputValue.value = "hello";
+      });
+      //Ajax codes
+      function showSearchBox(str) {
+        if (str.length == 0) {
+          document.getElementById("showSearchResult").innerHTML = " ";
+          document
+            .getElementById("searchWrapper")
+            .classList.remove("show-searchResultWrapper");
+          return;
+        }
+
+        var ajaxCall = new XMLHttpRequest();
+        ajaxCall.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("showSearchResult").innerHTML =
+              this.responseText;
+            document
+              .getElementById("searchWrapper")
+              .classList.add("show-searchResultWrapper");
+          }
+        };
+        ajaxCall.open("GET", "searchResult.php?q=" + str, true);
+        ajaxCall.send();
+      }
+    </script>
+
   </head>
   <body>
     <!-----------------------HERO-HEADER SECTION--------------------------->
@@ -40,10 +80,7 @@
               <a href="#/" class="text-primary inline-block">+1-202-555-0146</a>
               <ul class="inline-block topnavbar">
                 <li class="dropdown">
-                  <button
-                    class="bg-next-primary-color iwantToButton"
-                    id="iWantToBTN"
-                  >
+                  <button class="bg-next-primary-color iwantToButton" id="iWantToBTN">
                     I WANT TO <i class="fa fa-fw fa-chevron-down"></i>
                   </button>
                   <ul
@@ -52,7 +89,7 @@
                   >
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/book-appointment.html"
+                        href="../../patient-and-visitors/patient-care/book-appointment.php"
                         >Book Appointment</a
                       >
                     </li>
@@ -61,35 +98,35 @@
                     </li>
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/pay-a-bill.html"
+                        href="../../patient-and-visitors/patient-care/pay-a-bill.php"
                         >Pay a Bill</a
                       >
                     </li>
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/your-hospital-visit.html"
+                        href="../../patient-and-visitors/patient-care/your-hospital-visit.php"
                         >Visit Duke Hospital</a
                       >
                     </li>
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/patient-rights.html"
+                        href="../../patient-and-visitors/patient-care/patient-rights.php"
                         >Known my right as a Patient</a
                       >
                     </li>
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/patient-stories.html"
+                        href="../../patient-and-visitors/patient-care/patient-stories.php"
                         >Known Patient Stories</a
                       >
                     </li>
                     <li>
-                      <a href="../../about-us/services.html"
+                      <a href="../../about-us/services.php"
                         >Know About Duke Services</a
                       >
                     </li>
                     <li>
-                      <a href="../../map-and-direction.html"
+                      <a href="../../map-and-direction.php"
                         >Get Driving Direction</a
                       >
                     </li>
@@ -106,7 +143,7 @@
               class="column-20 bg-white container-left-ten%"
               id="whiteBackground"
             >
-              <a href="../../index.html" id="header_logo">
+              <a href="../../index.php" id="header_logo">
                 <img
                   src="../../assets/logo/blue-logo-duke.jpg"
                   alt="duke logo"
@@ -131,9 +168,9 @@
 
                 <ul id="menu_bar" class="menuBar">
                   <div class="sidebar-with-logo hide-lg-screen">
-                    <a href="../../index.html" class="mobile-navbar-logo">
+                    <a href="../../index.php" class="mobile-navbar-logo">
                       <img
-                        src="assets/logo/duke-logo-white.png"
+                        src="../../assets/logo/duke-logo-white.png"
                         alt="duke logo"
                       />
                     </a>
@@ -145,10 +182,7 @@
 
                   <li class="dropdown" id="dropDown">
                     <a href="#/" class="dropdown-btn js_dropdown">About Us </a>
-                    <div
-                      class="dropdown-content bg-next-primary-color"
-                      id="drop_Content"
-                    >
+                    <div class="dropdown-content bg-next-primary-color" id="drop_Content">
                       <div class="flex align-start">
                         <div class="image-container col-40 about-us">
                           <h3 class="text-primary">About Us</h3>
@@ -156,35 +190,31 @@
                             src="../../assets/bg-image/Male_Hospital_Visitor_1200x628-facebook.jpg"
                             alt="vistor"
                           />
+                          
                         </div>
                         <div class="col-60">
                           <ul>
                             <li>
-                              <a href="../../about-us/about-us.html"
-                                >About Us</a
-                              >
+                              <a href="../../about-us/about-us.php">About Us</a>
                             </li>
                             <li>
-                              <a href="../../about-us/meet-out-team.html"
+                              <a href="../../about-us/meet-out-team.php"
                                 >Meet Our Team</a
                               >
                             </li>
                             <li>
-                              <a href="../../about-us/history.html">History</a>
+                              <a href="../../about-us/history.php">History</a>
                             </li>
                             <li>
-                              <a href="../../about-us/services.html"
-                                >Services</a
-                              >
+                              <a href="../../about-us/services.php">Services</a>
                             </li>
                             <li>
-                              <a href="../../about-us/why-choose-us.html"
+                              <a href="../../about-us/why-choose-us.php"
                                 >Why Choose Us</a
                               >
                             </li>
                             <li>
-                              <a
-                                href="../../about-us/mission-vision-values.html"
+                              <a href="../../about-us/mission-vision-values.php"
                                 >Mission, Vision & Values</a
                               >
                             </li>
@@ -194,13 +224,8 @@
                     </div>
                   </li>
                   <li class="dropdown" id="dropDown">
-                    <a href="#/" class="dropdown-btn js_dropdown"
-                      >Patient & Visitors
-                    </a>
-                    <div
-                      class="dropdown-content bg-next-primary-color"
-                      id="drop_Content"
-                    >
+                    <a href="#/" class="dropdown-btn js_dropdown">Patient & Visitors </a>
+                    <div class="dropdown-content bg-next-primary-color" id="drop_Content">
                       <div class="flex align-start">
                         <div class="image-container column-30">
                           <h3 class="text-primary">Patient & Visitors</h3>
@@ -208,6 +233,7 @@
                             src="../../assets/bg-image/Male_Hospital_Visitor_1200x628-facebook.jpg"
                             alt="vistor"
                           />
+                        
                         </div>
                         <div class="flex align-start col-70">
                           <div class="patient-care col-33">
@@ -216,25 +242,25 @@
                               <ul class="column-50 remove-pd-bottom">
                                 <li>
                                   <a
-                                    href="../../patient-and-visitors/patient-care/book-appointment.html"
+                                    href="../../patient-and-visitors/patient-care/book-appointment.php"
                                     >Book Appointment</a
                                   >
                                 </li>
                                 <li>
                                   <a
-                                    href="../../patient-and-visitors/patient-care/your-hospital-visit.html"
+                                    href="../../patient-and-visitors/patient-care/your-hospital-visit.php"
                                     >Your Hospital Visit</a
                                   >
                                 </li>
                                 <li>
                                   <a
-                                    href="../../patient-and-visitors/patient-care/what-to-expect.html"
+                                    href="../../patient-and-visitors/patient-care/what-to-expect.php"
                                     >What to Expect</a
                                   >
                                 </li>
                                 <li>
                                   <a
-                                    href="../../patient-and-visitors/patient-care/pay-a-bill.html"
+                                    href="../../patient-and-visitors/patient-care/pay-a-bill.php"
                                     >Pay a Bill</a
                                   >
                                 </li>
@@ -242,21 +268,18 @@
                               <ul class="col-50 remove-mg-top">
                                 <li>
                                   <a
-                                    href="../../patient-and-visitors/patient-care/patient-rights.html"
+                                    href="../../patient-and-visitors/patient-care/patient-rights.php"
                                     >Patient Rights</a
                                   >
                                 </li>
                                 <li>
                                   <a
-                                    href="../../patient-and-visitors/patient-care/patient-stories.html"
+                                    href="../../patient-and-visitors/patient-care/patient-stories.php"
                                     >Patient Stories</a
                                   >
                                 </li>
                                 <li>
-                                  <a
-                                    href="../../patient-and-visitors/patient-care/frequently-asked-question.html"
-                                    >FAQ</a
-                                  >
+                                  <a href="../../patient-and-visitors/patient-care/frequently-asked-question.php">FAQ</a>
                                 </li>
                               </ul>
                             </div>
@@ -266,13 +289,13 @@
                             <ul>
                               <li>
                                 <a
-                                  href="../../patient-and-visitors/visitors/visitors-policy.html"
+                                  href="../../patient-and-visitors/visitors/visitors-policy.php"
                                   >Visitors Policy</a
                                 >
                               </li>
                               <li>
                                 <a
-                                  href="../../patient-and-visitors/visitors/visitors-information.html"
+                                  href="../../patient-and-visitors/visitors/visitors-information.php"
                                   >Visitors Information</a
                                 >
                               </li>
@@ -284,10 +307,10 @@
                   </li>
 
                   <li class="listed">
-                    <a href="../../refer-a-patient.html">Refer a Patient</a>
+                    <a href="../../refer-a-patient.php">Refer a Patient</a>
                   </li>
                   <li class="listed">
-                    <a href="../../map-and-direction.html">Map & Direction</a>
+                    <a href="../../map-and-direction.php">Map & Direction</a>
                   </li>
                   <li class="listed">
                     <a href="#/" id="contactUs">Contact us</a>
@@ -317,8 +340,20 @@
         <!--Search Container-->
         <div id="sectionContainer" class="sectionbar bg-primary-color">
           <div class="container">
-            <form action="action_page.php" method="post">
-              <input type="text" placeholder="I'm Looking for..." />
+              <form action="action_page.php" method="post">
+              <input
+                type="text"
+                placeholder="I'm Looking for..."
+                onkeyup="showSearchBox(this.value)"
+                id="searchQuery"
+              />
+
+              <div class="searchResultWrapper" id="searchWrapper">
+                <div
+                  id="showSearchResult"
+                  class="search_result_container"
+                ></div>
+              </div>
             </form>
           </div>
         </div>
@@ -391,14 +426,14 @@
         </div>
       </div>
       <!-------------CONTACT US ENDS ------------------>
-      <!-------------PATIENT STORIES------------------->
+      <!-------------VISITORS INFORMATION------------------->
       <section
-        id="Patient_Stories"
-        class="section-bg-image photo3"
+        id="Visitor_Information"
+        class="section-bg-image photo1"
         style="margin-top: 0"
       >
         <div class="container">
-          <h1 class="text-primary">Patient Stories</h1>
+          <h1 class="text-primary">Visitors Information</h1>
 
           <p class="text-primary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
@@ -410,68 +445,68 @@
 
     <!--------------------------------MAIN SECTION STARTS -------------------------------------->
     <main>
-      <section id="Patient_Stories">
+      <section id="Meet_the_team">
         <div class="container">
           <div class="flex align-start flex-reverse">
             <!--column left-->
             <div class="column-left col-30">
               <aside>
                 <div class="bg-white">
+                  <h5 class="text-primary">Patient Care</h5>
                   <div class="first-sidebar-container">
-                    <h5 class="text-primary">Patient Care</h5>
-                    <ul class="margin-bottom">
-                      <li>
-                        <a href="../patient-care/book-appointment.html"
-                          >Book Appointment</a
-                        >
-                      </li>
-                      <li>
-                        <a href="../patient-care/your-hospital-visit.html"
-                          >Your Hospital Visit</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="../patient-care/what-to-expect.html"
-                          class="text-active"
-                          >What to Expect</a
-                        >
-                      </li>
-                      <li>
-                        <a href="../patient-care/pay-a-bill.html">Pay a Bill</a>
-                      </li>
-                      <li>
-                        <a href="../patient-care/patient-stories.html"
-                          >Patient Stories</a
-                        >
-                      </li>
-                      <li>
-                        <a href="../patient-care/frequently-asked-question.html"
-                          >Frequently Asked Question</a
-                        >
-                      </li>
-                    </ul>
+                  <ul class="margin-bottom">
+                    <li>
+                      <a href="../patient-care/book-appointment.php"
+                        >Book Appointment</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../patient-care/your-hospital-visit.php"
+                        >Your Hospital Visit</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../patient-care/what-to-expect.php"
+                        class="text-active"
+                        >What to Expect</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../patient-care/pay-a-bill.php">Pay a Bill</a>
+                    </li>
+                    <li>
+                      <a href="../patient-care/patient-stories.php"
+                        >Patient Stories</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../patient-care/frequently-asked-question.php"
+                        >Frequently Asked Question</a
+                      >
+                    </li>
+                  </ul>
 
-                    <h5 class="text-primary">Visitors</h5>
-                    <ul class="margin-bottom">
-                      <li>
-                        <a href="../visitors/visitors-policy.html"
-                          >Visitor Policy</a
-                        >
-                      </li>
-                      <li>
-                        <a href="../visitors/visitors-information.html"
-                          >Visitor Information</a
-                        >
-                      </li>
-                    </ul>
+                  <h5 class="text-primary">Visitors</h5>
+                  <ul class="margin-bottom">
+                    <li>
+                      <a href="visitors-policy.php"
+                        >Visitor Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="visitors-information.php"
+                        >Visitor Information</a
+                      >
+                    </li>
+                  </ul>
                   </div>
 
                   <div class="sidebar sub-container">
                     <ul>
                       <li class="box pay-a-bill bg-white">
                         <a
-                          href="../../patient-and-visitors/patient-care/pay-a-bill.html"
+                          href="../../patient-and-visitors/patient-care/pay-a-bill.php"
                         >
                           <iconify-icon icon="logos:mastercard"></iconify-icon>
                           Pay a Bill</a
@@ -479,7 +514,7 @@
                       </li>
                       <li class="box request-appointment bg-white">
                         <a
-                          href="../../patient-and-visitors/patient-care/book-appointment.html"
+                          href="../../patient-and-visitors/patient-care/book-appointment.php"
                         >
                           <iconify-icon
                             icon="icon-park-solid:appointment"
@@ -489,7 +524,7 @@
                       </li>
                       <li class="box faq bg-white">
                         <a
-                          href="../../patient-and-visitors/patient-care/frequently-asked-question.html"
+                          href="../../patient-and-visitors/patient-care/frequently-asked-question.php"
                         >
                           <iconify-icon icon="wpf:faq"></iconify-icon>
                           Frequently Asked Question</a
@@ -503,108 +538,112 @@
             <!--column right-->
             <div class="column-right col-70">
               <div class="wrapper">
-                <div>
+                <div class="margin-bottom">
                   <h4 class="text-primary">
-                    Your Stories of your experience at Duke’s Memorial can help
-                    us make a Difference
+                    Visitor Information for Duke’s Memorial Hospital.
                   </h4>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nobis esse fugit necessitatibus sit iusto, iure ratione
-                    mollitia illum impedit earum! Necessitatibus, numquam
-                    facilis excepturi magnam provident dolorem. Odit, minima
-                    facere.
+                    Welcome to Duke Memorial Hospital. This section contains
+                    information to help you plan your visit.
                   </p>
-                  <div class="flex align-start margin-top">
-                    <div class="col-50">
-                      <a href="#/" class="content">
-                        <img
-                          src="../../assets/stories/s2.jpg"
-                          alt="christiana"
-                        />
-                        <div class="absolute first-testifier">
-                          <h6 class="name-tag text-primary">
-                            Tiera D. Andersen
-                          </h6>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-50 first-tesifier-comment">
-                      <h5 class="text-primary">
-                        Young Man’s Epileptic Seizures Gone After a Neurosurgery
-                      </h5>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsam voluptatum consectetur itaque, doloremque adipisci
-                        consequuntur dicta ducimus culpa necessitatibus eaque?
-                      </p>
-                      <a href="#/" class="btn bg-green text-white"
-                        >Read Story <i class="fa fa-angle-double-right"></i
-                      ></a>
-                    </div>
-                  </div>
+                  <p>
+                    If you would like to visit a relative or friend, please read
+                    this carefully, so you can play your part in keeping
+                    patients, staff and your own family safe. Our facility are
+                    smoke-free and weapons-free. Thank you for your cooperation.
+                  </p>
                 </div>
-                <div class="faint-horizontal-line"></div>
-                <div class="rest-of-testifiers flex">
-                  <div class="col-50">
-                    <a href="#/" class="content">
-                      <img src="../../assets/stories/s4.jpg" alt="christiana" />
-                      <div class="absolute">
-                        <h6 class="name-tag text-primary">Oliver Charlotte</h6>
-                      </div>
-                      <div class="story-clip">
-                        <p class="text-primary">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-50">
-                    <a href="#/" class="content">
-                      <img src="../../assets/stories/s5.jpg" alt="christiana" />
-                      <div class="absolute">
-                        <h6 class="name-tag text-primary">Mariam Harper</h6>
-                      </div>
-                      <div class="story-clip">
-                        <p class="text-primary">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-50">
-                    <a href="#/" class="content">
-                      <img src="../../assets/stories/s3.jpg" alt="christiana" />
-                      <div class="absolute">
-                        <h6 class="name-tag text-primary">Lucas Isabella</h6>
-                      </div>
-                      <div class="story-clip">
-                        <p class="text-primary">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-50">
-                    <a href="#/" class="content">
-                      <img src="../../assets/stories/s1.jpg" alt="christiana" />
-                      <div class="absolute">
-                        <h6 class="name-tag text-primary">Elijah Amelia</h6>
-                      </div>
-                      <div class="story-clip">
-                        <p class="text-primary">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
+
+                <div>
+                  <h5 class="text-primary">Guidance for visitors</h5>
+                  <ul class="circular-dots">
+                    <li>
+                      Each patient can have ONE visitor at each booking.
+                      Additional visitors may be permitted in exceptional
+                      circumstances at the discretion of the ward sister/team
+                      leader, such as if patient is receiving end of life care,
+                      on the grounds of compassion, or if the patient requires
+                      the support of a carer. Please be patient with the nursing
+                      teams if they need to put some limits on visiting.
+                    </li>
+                    <li>
+                      Booked visits last a maximum of 1 hour – please manage you
+                      time so our staff don’t have to ask you to leave at the
+                      end of the hour. In exceptional circumstances, the time
+                      booked may be longer, such as for patients receiving end
+                      of life care. Please discuss with the ward team.
+                    </li>
+                    <li>
+                      Please do not come to visit the hospital if you feel
+                      unwell. This includes any COVID-19 symptoms, cold or flu
+                      symptoms, or any signs of sickness.
+                    </li>
+                    <li>
+                      Due to the limited entrance space within Yeovil Hospital,
+                      we are staggering visits to wards on alternate days.
+                      Please speak to the ward clerk who will advise on the days
+                      visits can take place.
+                    </li>
+                    <li>
+                      You must wear a hospital-supplied facemask covering your
+                      mouth and nose throughout your visit (available at the
+                      entrance). If you are mask exempt, we can provide you with
+                      a visor at main reception but please let the ward clerk
+                      know at the time of booking so we can ensure additional
+                      measures are considered.
+                    </li>
+                    <li>
+                      You must clean your hands on entering and leaving the
+                      hospital and the ward.
+                    </li>
+                    <li>
+                      You must maintain social distancing whilst in the
+                      hospital.
+                    </li>
+                    <li>
+                      Please minimise the amount of personal belongings bought
+                      into the hospital.
+                    </li>
+                  </ul>
                 </div>
+
+                <div class="margin-top">
+                  <h5 class="text-primary">Exceptional circumstances</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Sint asperiores, eveniet hic facilis ex non, sed ducimus
+                    quaerat ut voluptates molestias, numquam nesciunt. Velit
+                    impedit nostrum consequuntur, nesciunt fuga iste ipsam
+                    soluta id sunt, possimus sapiente voluptatum? Dicta,
+                    provident ipsa!  impedit nostrum consequuntur, nesciunt fuga iste ipsam
+                    soluta id sunt, possimus sapiente voluptatum? Dicta,
+                    provident ipsa!
+                  </p>
+                  </p>
+                </div>
+                <div class="margin-top">
+                  <h5 class="text-primary">Emergency department (A&E)</h5>
+                  <p>
+                   For those attending the emergency department (A&E), we will only allow the patient to enter the hospital building unless you are accompanying a child or there are exceptional circumstances – please speak to the nurse in charge to discuss this.
+                  </p>
+                </div>
+
+
+                <div class="margin-top">
+                  <h5 class="text-primary">Outpatient areas</h5>
+                  <p>
+                   Please attend your appointment alone. If the nature of your appointment means you do need someone to be with you, please contact the number on your appointment letter to discuss this before arriving.
+                  </p>
+                  <p>
+                   Please arrive no more than 10 minutes before your booked appointment time.
+                  </p>
+                </div>
+                <h6 class="text-dark">Thank you for playing your part in keeping our patients, staff and community safe.</h6>
               </div>
             </div>
+
+
+
           </div>
         </div>
       </section>
@@ -652,19 +691,19 @@
               <div class="col-30">
                 <h5 class="text-white">About Duke</h5>
                 <ul>
-                  <li><a href="../../about-us/history.html">History</a></li>
+                  <li><a href="../../about-us/history.php">History</a></li>
                   <li>
-                    <a href="../../about-us/mission-vision-values.html"
+                    <a href="../../about-us/mission-vision-values.php"
                       >Mission, Vision, Values</a
                     >
                   </li>
                   <li>
-                    <a href="../../about-us/meet-out-team.html"
+                    <a href="../../about-us/meet-out-team.php"
                       >Meet the Team</a
                     >
                   </li>
                   <li>
-                    <a href="../../map-and-direction.html">Map & Direction</a>
+                    <a href="../../map-and-direction.php">Map & Direction</a>
                   </li>
                 </ul>
               </div>
@@ -675,41 +714,41 @@
                     <li><a href="#/">Contact</a></li>
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/your-hospital-visit.html"
+                        href="../../patient-and-visitors/patient-care/your-hospital-visit.php"
                         >Your Visit</a
                       >
                     </li>
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/pay-a-bill.html"
+                        href="../../patient-and-visitors/patient-care/pay-a-bill.php"
                         >Pay a Bill</a
                       >
                     </li>
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/book-appointment.html"
+                        href="../../patient-and-visitors/patient-care/book-appointment.php"
                         >Request Appointment</a
                       >
                     </li>
                   </ul>
                   <ul>
                     <li>
-                      <a href="../../refer-a-patient.html">Refer a Patient</a>
+                      <a href="../../refer-a-patient.php">Refer a Patient</a>
                     </li>
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/patient-rights.html"
+                        href="../../patient-and-visitors/patient-care/patient-rights.php"
                         >Patient Rights</a
                       >
                     </li>
                     <li>
                       <a
-                        href="../../patient-and-visitors/patient-care/patient-stories.html"
+                        href="../../patient-and-visitors/patient-care/patient-stories.php"
                         >Patient Stories</a
                       >
                     </li>
                     <li>
-                      <a href="../../about-us/why-choose-us.html"
+                      <a href="../../about-us/why-choose-us.php"
                         >Why Choose Us</a
                       >
                     </li>
@@ -718,7 +757,7 @@
               </div>
               <div class="col-30">
                 <div class="right-bottom-box-shadow">
-                  <a href="index.html" id="logo">
+                  <a href="../../../index.php" id="logo">
                     <img
                       src="../../assets/logo/duke-logo-blue.jpeg"
                       alt="duke-logo-blue"
@@ -733,18 +772,18 @@
                   </address>
                 </div>
                 <div class="social-icon-wrapper">
-                  <ul>
+                   <ul>
                     <li>
-                      <a href="#/"><i class="fa fa-facebook"></i></a>
+                      <a href="#/"><i class="fa-brands fa-facebook-f"></i></a>
                     </li>
                     <li>
-                      <a href="#/"><i class="fa fa-twitter"></i></a>
+                      <a href="#/"><i class="fa-brands fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#/"><i class="fa fa-instagram"></i></a>
+                      <a href="#/"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li>
-                      <a href="#/"><i class="fa fa-linkedin"></i></a>
+                      <a href="#/"><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -755,7 +794,7 @@
             <div class="flex align-start">
               <div class="col-50">
                 <small class="text-white"
-                  >&copy; 2022 Duke Memorial Hospital. All Rights
+                  >&copy; <?php echo date("Y") ?> Duke Memorial Hospital. All Rights
                   Reserved</small
                 >
               </div>
@@ -765,7 +804,7 @@
                   <li><a href="#/">Terms of Use</a></li>
                   <li><a href="#/">Sitemap</a></li>
                   <li>
-                    <a href="#/"
+                      <a href="www.blackpopex.com" target="_blank"
                       >Designed & Built by
                       <span class="text-green">Blackpopex</span></a
                     >
@@ -779,18 +818,5 @@
     </footer>
     <script src="../../js/main.js"></script>
     <script src="../../js/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script>
-      // must be an array, could have only one element
-      let visibilityIds = [
-        "#counters_1",
-        "#counters_2",
-        "#counters_3",
-        "#counters_4",
-      ];
-      // default counter class
-      let counterClass = ".counter";
-      // default animation speed
-      let defaultSpeed = 6000;
-    </script>
   </body>
 </html>
