@@ -28,7 +28,7 @@ if (strlen($getQueryString)>0) {
                 } else {
                     $hint=$hint . "<br /><a href='" . 
                     $z->item(0)->childNodes->item(0)->nodeValue . 
-                    "'>" . 
+                    "' >" . 
                     $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
                 }
             }
