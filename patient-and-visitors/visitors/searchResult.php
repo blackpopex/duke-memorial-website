@@ -28,7 +28,11 @@ if (strlen($getQueryString)>0) {
                 } else {
                     $hint=$hint . "<br /><a href='" . 
                     $z->item(0)->childNodes->item(0)->nodeValue . 
+<<<<<<< HEAD
                     "'>" . 
+=======
+                    "' >" . 
+>>>>>>> 286cfdc15d9a4d3a2e784c068e22c92de0f59d91
                     $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
                 }
             }

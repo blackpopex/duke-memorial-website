@@ -746,7 +746,9 @@
                   <li><a href="#/">Terms of Use</a></li>
                   <li><a href="#/">Sitemap</a></li>
                   <li>
-                     <a href="www.blackpopex.com" target="_blank"
+
+                     <a href="http://www.blackpopex.com/" target="_blank"
+
                       >Designed & Built by
                       <span class="text-green">Blackpopex</span></a
                     >
@@ -760,6 +762,7 @@
     </footer>
     <script src="../../js/main.js"></script>
     <script src="../../js/jquery-3.2.1.min.js" type="text/javascript"></script>
+
         <script src="../../js/clearinputfield.js"></script>
 
 

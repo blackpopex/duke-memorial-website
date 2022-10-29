@@ -23,12 +23,20 @@ if (strlen($getQueryString)>0) {
                 if ($hint=="") {
                     $hint="<a href='" . 
                     $z->item(0)->childNodes->item(0)->nodeValue .
+<<<<<<< HEAD
                     "' target='_blank'>" . 
+=======
+                    "'>" . 
+>>>>>>> 286cfdc15d9a4d3a2e784c068e22c92de0f59d91
                     $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
                 } else {
                     $hint=$hint . "<br /><a href='" . 
                     $z->item(0)->childNodes->item(0)->nodeValue . 
+<<<<<<< HEAD
                     "' target='_blank'>" . 
+=======
+                    "' >" . 
+>>>>>>> 286cfdc15d9a4d3a2e784c068e22c92de0f59d91
                     $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
                 }
             }

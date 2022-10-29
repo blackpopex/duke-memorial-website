@@ -27,6 +27,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script>
+<<<<<<< HEAD
+=======
+      //Search Container
+
+      //Clear Input filed when close BTN is clicked
+      $(document).ready(function () {
+        $("#SearchBTN").click(function () {
+          $("#searchQuery").val("");
+          $("#searchWrapper").removeClass("show-searchResultWrapper");
+        });
+      });
+
+      searchBTN.addEventListener("click", function () {
+        inputValue.value = "hello";
+      });
+>>>>>>> 286cfdc15d9a4d3a2e784c068e22c92de0f59d91
       //Ajax codes
       function showSearchBox(str) {
         if (str.length == 0) {
@@ -766,7 +782,15 @@
                   <li><a href="#/">Terms of Use</a></li>
                   <li><a href="#/">Sitemap</a></li>
                   <li>
+<<<<<<< HEAD
                     <a href="www.blackpopex.com" target="_blank"
+=======
+<<<<<<< HEAD
+                    <a href="www.blackpopex.com" target="_blank"
+=======
+                    <a href="http://www.blackpopex.com/" target="_blank"
+>>>>>>> d49acec6305e5b0558d62f12065fe99ef058a1d0
+>>>>>>> 286cfdc15d9a4d3a2e784c068e22c92de0f59d91
                       >Designed & Built by
                       <span class="text-green">Blackpopex</span></a
                     >
@@ -780,8 +804,11 @@
     </footer>
     <script src="../js/main.js"></script>
     <script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<<<<<<< HEAD
                 <script src="../js/clearinputfield.js"></script>
 
+=======
+>>>>>>> 286cfdc15d9a4d3a2e784c068e22c92de0f59d91
     
   </body>
 </html>

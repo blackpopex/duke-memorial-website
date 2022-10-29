@@ -27,7 +27,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script>
-
       //Ajax codes
       function showSearchBox(str) {
         if (str.length == 0) {
@@ -672,7 +671,8 @@
                   <li><a href="#/">Terms of Use</a></li>
                   <li><a href="#/">Sitemap</a></li>
                   <li>
-                     <a href="www.blackpopex.com" target="_blank"
+                     <a href="http://www.blackpopex.com/" target="_blank"
+
                       >Designed & Built by
                       <span class="text-green">Blackpopex</span></a
                     >
@@ -687,7 +687,5 @@
     <script src="../../js/main.js"></script>
     <script src="../../js/jquery-3.2.1.min.js" type="text/javascript"></script>
         <script src="../../js/clearinputfield.js"></script>
-
-
   </body>
 </html>
